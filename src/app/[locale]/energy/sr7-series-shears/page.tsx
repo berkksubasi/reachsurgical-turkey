@@ -3,13 +3,12 @@
 import { useState, useEffect, useRef } from 'react';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
-import Image from 'next/image';
 import Link from 'next/link';
 import { useTranslations } from 'next-intl';
 
 export default function SR7SeriesShearsPage() {
   const t = useTranslations('energy.sr7SeriesShears');
-  const [activeSection, setActiveSection] = useState(0);
+  const [, setActiveSection] = useState(0);
   const [isVideo1Playing, setIsVideo1Playing] = useState(false);
   const [isVideo2Playing, setIsVideo2Playing] = useState(false);
   const videoRef1 = useRef<HTMLVideoElement>(null);
@@ -43,16 +42,16 @@ export default function SR7SeriesShearsPage() {
     };
     
     // Arka plan videoları için observer'lar
-    const createObserver = (videoRef: any) => {
+    const createObserver = (videoRef: React.RefObject<HTMLVideoElement | null>) => {
       return new IntersectionObserver((entries) => {
         entries.forEach(entry => {
           if (entry.isIntersecting && videoRef.current) {
             console.log("Video görünür, oynatmaya çalışılıyor...");
             videoRef.current.play()
               .then(() => console.log("Video başarıyla oynatılıyor"))
-              .catch((e: any) => {
-                console.error("Video oynatma hatası:", e);
-                console.error("Hata detayları:", JSON.stringify(e));
+              .catch((error: Error) => {
+                console.error("Video oynatma hatası:", error);
+                console.error("Hata detayları:", JSON.stringify(error));
               });
           } else if (videoRef.current) {
             videoRef.current.pause();

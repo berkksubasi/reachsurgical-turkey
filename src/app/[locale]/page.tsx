@@ -5,7 +5,6 @@ import Footer from '@/components/Footer';
 import Hero from '@/components/Hero';
 import ProductSection from '@/components/ProductSection';
 import NewsSection from '@/components/NewsSection';
-import Image from 'next/image';
 import Link from 'next/link';
 import { useTranslations, useLocale } from 'next-intl';
 

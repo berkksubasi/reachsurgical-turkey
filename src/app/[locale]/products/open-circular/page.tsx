@@ -4,22 +4,16 @@ import { useEffect } from 'react';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import Image from 'next/image';
-import Link from 'next/link';
-import { useTranslations, useLocale } from 'next-intl';
+import { useTranslations } from 'next-intl';
 
 export default function OpenCircularPage() {
   const t = useTranslations('products.openCircular');
-  const locale = useLocale();
   
   useEffect(() => {
     // Sayfa yüklendiğinde en üste scroll
     window.scrollTo(0, 0);
   }, []);
 
-  // Bağlantı URL'lerini oluşturma
-  const createHref = (path: string) => {
-    return `/${locale}${path}`;
-  };
 
   return (
     <div className="flex flex-col min-h-screen">

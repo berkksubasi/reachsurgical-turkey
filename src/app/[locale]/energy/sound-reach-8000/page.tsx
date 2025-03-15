@@ -9,7 +9,7 @@ import { useTranslations } from 'next-intl';
 
 export default function SoundReach8000Page() {
   const t = useTranslations('energy.soundReach8000');
-  const [activeSection, setActiveSection] = useState(0);
+  const [, setActiveSection] = useState(0);
   const videoRef1 = useRef<HTMLVideoElement>(null);
   const videoRef2 = useRef<HTMLVideoElement>(null);
   
@@ -39,17 +39,16 @@ export default function SoundReach8000Page() {
     };
     
     // Video observer'ları
-    const createObserver = (videoRef: any) => {
+    const createObserver = (videoRef: React.RefObject<HTMLVideoElement | null>) => {
       return new IntersectionObserver((entries) => {
         entries.forEach(entry => {
           if (entry.isIntersecting && videoRef.current) {
             console.log("Video görünür, oynatmaya çalışılıyor...");
             videoRef.current.play()
               .then(() => console.log("Video başarıyla oynatılıyor"))
-              .catch((e: any) => {
-                console.error("Video oynatma hatası:", e);
-                // Hata mesajını detaylı görüntüle
-                console.error("Hata detayları:", JSON.stringify(e));
+              .catch((error: Error) => {
+                console.error("Video oynatma hatası:", error);
+                console.error("Hata detayları:", JSON.stringify(error));
               });
           } else if (videoRef.current) {
             videoRef.current.pause();

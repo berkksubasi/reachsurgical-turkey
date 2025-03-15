@@ -9,7 +9,7 @@ import { useTranslations } from 'next-intl';
 
 export default function EnersealVesselSealerDividerPage() {
   const t = useTranslations('energy.enersealVesselSealer');
-  const [activeSection, setActiveSection] = useState(0);
+  const [, setActiveSection] = useState(0);
   const videoRef1 = useRef<HTMLVideoElement>(null);
   const videoRef2 = useRef<HTMLVideoElement>(null);
   

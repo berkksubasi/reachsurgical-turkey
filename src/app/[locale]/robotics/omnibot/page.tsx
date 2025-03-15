@@ -1,15 +1,14 @@
 'use client';
 
-import { useState, useEffect, useRef } from 'react';
+import { useState, useEffect } from 'react';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import Image from 'next/image';
-import Link from 'next/link';
 import { useTranslations } from 'next-intl';
 
 export default function OmnibotPage() {
   const t = useTranslations('robotics.omnibot');
-  const [activeSection, setActiveSection] = useState(0);
+  const [, setActiveSection] = useState(0);
   
   useEffect(() => {
     // Sayfa yüklendiğinde en üste scroll

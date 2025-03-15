@@ -309,10 +309,13 @@
     "home": "Home",
     "news": "News",
     "contact": "Contact",
-    "subscribeTitle": "Subscribe to Our Mailing List",
-    "emailPlaceholder": "Enter Your Email",
+    "subscribeTitle": "Subscribe to Our Newsletter",
+    "emailPlaceholder": "Enter your email address",
     "joinButton": "Join",
-    "address": "120 Xinxing Road West Zone, TEDA 300462 Tianjin China"
+    "address": "120 Xinxing Road West Zone, TEDA 300462 Tianjin China",
+    "surgicalStapling": "Surgical Stapling",
+    "energy": "Energy",
+    "aboutUs": "About Us"
   },
   "about": {
     "hero": {

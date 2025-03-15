@@ -10,7 +10,7 @@ import { useTranslations } from 'next-intl';
 export default function EnerReachPage() {
   const t = useTranslations('energy.enerReach');
   const [videoModalOpen, setVideoModalOpen] = useState(false);
-  const [activeSection, setActiveSection] = useState(0);
+  const [, setActiveSection] = useState(0);
   
   useEffect(() => {
     // Sayfa yüklendiğinde en üste scroll

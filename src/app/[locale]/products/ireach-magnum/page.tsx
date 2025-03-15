@@ -1,6 +1,6 @@
 'use client';
 
-import { useRef, useEffect, useState, RefObject } from 'react';
+import { useRef, useEffect, useState } from 'react';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import AnimatedElement from '@/components/AnimatedElement';
@@ -11,7 +11,7 @@ import { useTranslations, useLocale } from 'next-intl';
 export default function IReachMagnumPage() {
   const t = useTranslations('products.iReachMagnum');
   const locale = useLocale();
-  const [activeSection, setActiveSection] = useState(0);
+  const [, setActiveSection] = useState(0);
   const heroVideoRef = useRef<HTMLVideoElement>(null);
   const ergonomicVideoRef = useRef<HTMLVideoElement>(null);
   const intelligentVideoRef = useRef<HTMLVideoElement>(null);
@@ -43,7 +43,7 @@ export default function IReachMagnumPage() {
     };
     
     // Video observer'ları
-    const createObserver = (videoRef: any) => {
+    const createObserver = (videoRef: React.RefObject<HTMLVideoElement | null>) => {
       return new IntersectionObserver((entries) => {
         entries.forEach(entry => {
           if (entry.isIntersecting && videoRef.current) {
@@ -74,13 +74,6 @@ export default function IReachMagnumPage() {
     };
   }, []);
   
-  // Bölüme kaydırma fonksiyonu
-  const scrollToSection = (index: number) => {
-    const sections = document.querySelectorAll('section');
-    if (sections[index]) {
-      sections[index].scrollIntoView({ behavior: 'smooth' });
-    }
-  };
 
   return (
     <div className="flex flex-col min-h-screen">

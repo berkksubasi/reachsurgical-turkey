@@ -1,17 +1,10 @@
 'use client';
 
-import Link from 'next/link';
 import Image from 'next/image';
-import { useTranslations, useLocale } from 'next-intl';
+import { useTranslations } from 'next-intl';
 
 const NewsSection = () => {
   const t = useTranslations('home.news');
-  const locale = useLocale();
-  
-  // Bağlantı URL'lerini oluşturma
-  const createHref = (path: string) => {
-    return `/${locale}${path}`;
-  };
   
   return (
     <section className="py-16 bg-gray-50">

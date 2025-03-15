@@ -9,9 +9,9 @@ import { useTranslations } from 'next-intl';
 
 export default function AboutPage() {
   const t = useTranslations('about');
-  const [activeSection, setActiveSection] = useState(0);
+  const [, setActiveSection] = useState(0);
   const sliderRef = useRef<HTMLDivElement>(null);
-  const [sliderPosition, setSliderPosition] = useState(0);
+  const [, setSliderPosition] = useState(0);
   
   // Gallery images
   const galleryImages = Array.from({ length: 37 }, (_, i) => {
