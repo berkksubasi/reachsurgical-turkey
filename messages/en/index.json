@@ -1,0 +1,377 @@
+{
+  "header": {
+    "surgicalStapling": "Surgical Stapling",
+    "omnia": "Omnia",
+    "iReachMagnum": "iReach Magnum",
+    "openCircular": "Open Circular",
+    "openLinear": "Open Linear",
+    "openPPH": "Open PPH",
+    "energy": "Energy",
+    "enerReachOP9": "Ener Reach OP9 Generator",
+    "enerSealVesselSealer": "Enerseal Vessel Sealer/Divider",
+    "soundReach8000": "Sound Reach 8000",
+    "sr7SeriesShears": "SR7 Series Shears",
+    "robotics": "Robotics",
+    "omnibot": "Omnibot",
+    "aboutUs": "About Us",
+    "contact": "Contact",
+    "support": "Support",
+    "news": "News"
+  },
+  "products": {
+    "omnia": {
+      "hero": {
+        "title": "Omnia Stapling Platform",
+        "subtitle": "The most advanced stapling platform"
+      },
+      "overview": {
+        "title": "PRO RANGE / PRO PERFORMANCE / PRO INTELLIGENCE",
+        "description": "The OMNIA platform combine our latest innovations in stapling technologies to form the most expansive, most adaptable tool for even the most demanding surgeons."
+      },
+      "proRange": {
+        "title": "PRO Range",
+        "description": "From 30mm, 45mm to 60 mm staple length, both conventional and progressive height reloads. The OMNIA platform offer the most expansive selection of reloads. Giving the ultimate freedom of choice to surgeons."
+      },
+      "proPerformance": {
+        "title": "PRO Performance",
+        "features": [
+          "Fixed anvil design allows easier tissue placement, especially in narrow spaces.",
+          "The new progressive height reloads features stepped surface which facilitates fluid extraction and improve staple formation.",
+          "Fully powered automatic jaw opening/closing feature reduces tissue tearing and improves safety.",
+          "Surgeon can also short-press to close the jaw in half for better access."
+        ]
+      },
+      "proIntelligence": {
+        "title": "PRO Intelligence",
+        "features": [
+          "The embedded chip intelligently recognizes different reload models the moment it connects and apply specific compression and firing process parameters for optimal effect.",
+          "The firing process is programmed to be adaptive to various tissue thickness and adjust cutting speed accordingly.",
+          "The stapler will gradually slow down for last part of very firing process to minimize tissue slippage and reduce staple malformation."
+        ]
+      },
+      "specifications": {
+        "title": "Technical Specifications",
+        "downloadBrochure": "Download Brochure",
+        "contactSales": "Contact Sales"
+      },
+      "cta": {
+        "title": "Interested in Omnia?",
+        "subtitle": "Contact Us Today",
+        "button": "Contact Us"
+      }
+    },
+    "iReachMagnum": {
+      "hero": {
+        "title": "iReach Magnum Powered Stapler",
+        "subtitle": "Surgical Stapling Redefined"
+      },
+      "nextBigThing": {
+        "subtitle": "ENDO III Stapling",
+        "title": "The Next Big Thing",
+        "description1": "Fundamental essentials of ENDO III stapling system now re-imagined and reassembled into a brand-new entity.",
+        "description2": "Signature tissue compression paired with smooth powered firing yields unprecedented experience, unlocking new possibilities in the OR."
+      },
+      "ergonomicDesign": {
+        "title": "Ergonomic Design",
+        "description": "iReach Magnum offers up to 55° of articulation in both directions, in 5 gears."
+      },
+      "optimisedCompression": {
+        "title": "Optimised Compression",
+        "description": "With iReach Magnum you get 15-seconds pre-compression notice, improved compression force and a safety button."
+      },
+      "intelligentFiring": {
+        "title": "Intelligent Firing",
+        "description": "Microchips dynamically monitor incoming signals and adjust output."
+      },
+      "cuttingEdge": {
+        "title": "Cutting Edge Technology",
+        "description": "Powered by a high-capacity lithium battery, iReach Magnum delivers consistent performance throughout the procedure.",
+        "features": [
+          "Consistent staple formation",
+          "Smooth firing",
+          "Reduced tissue trauma"
+        ]
+      },
+      "cta": {
+        "title": "Ready to Experience iReach Magnum?",
+        "subtitle": "Contact our sales team for a demonstration",
+        "button": "Contact Us"
+      }
+    },
+    "openCircular": {
+      "title": "REACH ACS-D Series Circular Staplers",
+      "features": {
+        "stapleHeight": "Precise Staple Height Control",
+        "stapleHeightDesc": "With Staple Height Indicator window.",
+        "anvilDesign": "Thinner Anvil Design",
+        "anvilDesignDesc": "Facilitates easy manoeuvring in tight spaces during procedures.",
+        "moreStaples": "More Staples in the Cartridge",
+        "moreStaplesDesc": "Providing better hemostasis with maintained compression.",
+        "arcIndicator": "180° Arc Indicator Window",
+        "arcIndicatorDesc": "Easily confirm compression status from multiple angles.",
+        "feedback": "Tactile and Audio Feedback",
+        "feedbackDesc": "Help physicians to confirm a successful firing.",
+        "singleHandle": "Single-Handle Design",
+        "singleHandleDesc": "Easier to manoeuvre and fire."
+      }
+    },
+    "openLinear": {
+      "title": "REACH FLCLinear Cutter & Single Use Loading Units",
+      "features": {
+        "flcCutter": "FLC Cutter",
+        "flcCutterDesc": "Helps surgeons to achieve superior cutting and hemostasis with unified compression, secure tissue gripping force and outstanding blade design.",
+        "reloadSizes": "A Variety Range of Reload Sizes",
+        "reloadSizesDesc": "Surgeons are allowed to choose from a variety range of reload sizes, with safety lock mechanisms to ensure clinical safety."
+      }
+    },
+    "openPPH": {
+      "title": "REACH PPH-33D Procedure set for Hemorrhoid and Prolapse",
+      "features": {
+        "adjustableStaple": "Adjustable Staple Height",
+        "adjustableStapleDesc": "(0.8~1.5mm) precisely control stapled tissue thickness.",
+        "staplers": "32 Staplers",
+        "staplersDesc": "Provide better hemostasis and even pressure.",
+        "sutureThreads": "4 Suture Thread Holes",
+        "sutureThreadsDesc": "Facilitates easy retrieving suture threads.",
+        "fixedAnvil": "Fixed Anvil",
+        "fixedAnvilDesc": "Reduces risk of accidental detachment.",
+        "largerHousing": "Larger Housing Cavity",
+        "largerHousingDesc": "Allows more tissue during stapling process.",
+        "centralRod": "63mm Length Central Rod",
+        "centralRodDesc": "Provides better view during procedure."
+      }
+    }
+  },
+  "energy": {
+    "enerReach": {
+      "title": "ENER REACH OP9",
+      "subtitle": "Duo Output Energy Platform",
+      "watchVideo": "Watch the feature video",
+      "tissueSenseTechnology": {
+        "title": "Tissue Sense Technology",
+        "description": "Tissue Sense technology constantly monitors signals at the instrument jaw and intelligently adjusting power for optimal sealing, fast transecting and minimized heat generation."
+      },
+      "productFeatures": {
+        "title": "Product Features",
+        "feature1": "7mm Vessel Sealing",
+        "feature2": "RF & Ultrasonic Duo-energy Platform",
+        "feature3": "7\" Touch Screen",
+        "feature4": "Multi-lingual Interface"
+      },
+      "contactUs": "Contact Us",
+      "downloadBrochure": "Download Brochure"
+    },
+    "enersealVesselSealer": {
+      "title": "Enerseal Vessel Sealer/Divider",
+      "subtitle": "Advanced Vessel Sealing Technology",
+      "description": "Designed for precise vessel sealing and tissue division with minimal thermal spread, ensuring optimal surgical outcomes.",
+      "antiStickingTechnology": {
+        "title": "Anti-sticking Technology",
+        "description": "Our proprietary anti-sticking coating minimizes sticking, reduces eschar buildup, and simplifies cleaning during procedures, ensuring a smoother and more efficient experience."
+      },
+      "precisionSealing": {
+        "title": "Precision Sealing",
+        "description": "Advanced energy delivery system provides consistent vessel sealing with minimal thermal spread. Ideal for delicate procedures where precision is paramount."
+      },
+      "contactUs": "Contact Us",
+      "downloadBrochure": "Download Brochure"
+    },
+    "soundReach8000": {
+      "title": "Sound Reach 8000",
+      "subtitle": "Forwarding Energy",
+      "brandNewPlatform": {
+        "title": "Brand New Platform",
+        "description1": "The Sound Reach ultrasonic platform takes a giant leap forward.",
+        "description2": "The 8000 generator feature a brand new distinctive design and unique features that transforms the way of surgery."
+      },
+      "compactDesign": {
+        "title": "Compact Design",
+        "description": "With touch interface and multilingual."
+      },
+      "tissueSenseTechnology": {
+        "title": "Tissue Sense Technology",
+        "description1": "A breakthrough technology that changes the way to perform.",
+        "description2": "Tissue Sense is the combination of both hardware and software allowing the 8000 Generator to simultaneously monitor signals from the shears and adjust energy output according to tissue resistance.",
+        "description3": "This allows a smooth and consistent cutting experience regardless of tissue thickness and default settings, eliminating the need to constantly adjust output settings, so surgeons can now focus on the surgery."
+      },
+      "pdSeriesShears": {
+        "title": "PD Series Shears",
+        "description": "The PD Series Shears offers new utilisation with key technology breakthrough and multi-purpose design, making it an ideal choice to deliver consistent performance in surgeries."
+      },
+      "contactUs": "Contact Us"
+    },
+    "sr7SeriesShears": {
+      "title": "SR7 Series Shears",
+      "subtitle": "7mm Vessel Sealing with two ergonomic options",
+      "tissueSense": {
+        "title": "Tissue Sense 2.0",
+        "description1": "The revolutionary Tissue Sense 2.0 technology represents a significant leap forward, empowering surgeons with unmatched precision.",
+        "description2": "Seamlessly integrating hardware and software, this advanced system monitors signals from the shears, dynamically adjusting energy output based on tissue thickness between the jaws.",
+        "description3": "This eliminates surgeon's need to constantly adjust power level to accommodate different tissue thickness."
+      },
+      "vesselSealing": {
+        "title": "Vessel Sealing",
+        "description1": "SR7 Series Shears safely seal and cut vessels up to 7mm.",
+        "description2": "Advanced energy delivery system provides consistent vessel sealing with minimal thermal spread.",
+        "description3": "Ergonomic design enhances surgeon comfort during lengthy procedures."
+      },
+      "contactUs": "Contact Us",
+      "downloadBrochure": "Download Brochure"
+    }
+  },
+  "robotics": {
+    "omnibot": {
+      "title": "OMNIBOT",
+      "subtitle": "Surgical Robotic Platform",
+      "innovation": {
+        "title": "Innovation from New Heights",
+        "description1": "Reach Surgical is proud to offers a new perspective in a cutting-edge platform designed to revolutionize the field.",
+        "description2": "With its user-friendly interface, a wide range of arm choices, and state-of-the-art optical and visual system, it sets a new standard for excellence in your practice."
+      },
+      "multiport": {
+        "title": "OMNIBOT",
+        "subtitle": "Multi-port System",
+        "description": "The Omnibot MP system is equipped with four robotic arms, each offering seven degrees of freedom. This design provides extensive range of motion for precise port placement and docking, ensuring natural dexterity to meet a variety of procedural needs."
+      },
+      "features": {
+        "title": "Product Features",
+        "diverseEcosystem": {
+          "title": "Diverse Eco-system",
+          "description": "Our platform provides a comprehensive solution for robotic surgery, encompassing endoscopic vision systems, surgical instruments, energy devices, and stapling portfolios. This complete suite caters to every surgical team and clinical approach, ensuring versatility and efficiency in the operating room."
+        },
+        "precisionControl": {
+          "title": "Precision Control",
+          "description": "Our instruments mimic the human wrist, offering 360° three-dimensional rotation and flexibility comparable to a human hand. This advanced design filters out hand tremors, delivering enhanced stability and precision during operations."
+        },
+        "telesurgery": {
+          "title": "Tele-surgery",
+          "description": "Utilizing the full potential of 5G technology, our tele-surgery solutions transform the concept of long-distance surgery into reality. Successfully implemented in cases where the surgeon's console is over 10,000 miles away from the patient, our system sets new benchmarks in remote surgical capabilities."
+        },
+        "advancedImaging": {
+          "title": "Advanced Imaging",
+          "description": "Our advanced imaging technology features state-of-the-art 3D high-definition systems, Fluorescence imaging systems, and exceptionally low image latency. This combination delivers unparalleled clarity and responsiveness, offering detailed visualization of the surgical field with unprecedented precision."
+        }
+      }
+    }
+  },
+  "home": {
+    "hero": {
+      "title": "Leading in Surgical Innovation",
+      "subtitle": "Empowering healthcare professionals with innovative surgical solutions",
+      "button": "Explore More"
+    },
+    "products": {
+      "title": "Our Products",
+      "subtitle": "Innovative surgical solutions",
+      "viewAll": "View All",
+      "descriptions": {
+        "omnia": "Advanced surgical stapling system for precise tissue approximation.",
+        "iReachMagnum": "Powerful stapling device designed for thoracic and abdominal procedures.",
+        "energy": "Innovative energy solutions for hemostasis and tissue dissection."
+      }
+    },
+    "surgicalSection": {
+      "title": "Surgical Stapling and Energy Products",
+      "subtitle": "Expanding the Scope of Surgery",
+      "button": "About Us"
+    },
+    "news": {
+      "title": "News & Updates",
+      "viewAll": "View All",
+      "readMore": "Read More",
+      "items": {
+        "news1": {
+          "date": "May 15, 2024",
+          "title": "New Omnia Stapler Receives FDA Approval",
+          "content": "Our latest surgical stapling device has received FDA approval for use in general and thoracic procedures."
+        },
+        "news2": {
+          "date": "April 28, 2024",
+          "title": "Reach Surgical Expands European Distribution",
+          "content": "We're excited to announce our expanded distribution network across Europe, bringing our innovative surgical solutions to more healthcare providers."
+        },
+        "news3": {
+          "date": "March 10, 2024",
+          "title": "New Research Partnership Announced",
+          "content": "Reach Surgical partners with leading medical research institutions to develop next-generation surgical technologies."
+        }
+      }
+    }
+  },
+  "footer": {
+    "products": "Products",
+    "company": "Company",
+    "support": "Support",
+    "contactUs": "Contact Us",
+    "copyright": "© 2024 Reach Surgical. All rights reserved.",
+    "privacyPolicy": "Privacy Policy",
+    "termsOfUse": "Terms of Use",
+    "home": "Home",
+    "news": "News",
+    "contact": "Contact",
+    "subscribeTitle": "Subscribe to Our Mailing List",
+    "emailPlaceholder": "Enter Your Email",
+    "joinButton": "Join",
+    "address": "120 Xinxing Road West Zone, TEDA 300462 Tianjin China"
+  },
+  "about": {
+    "hero": {
+      "title": "Expand the Scope of Surgery",
+      "watchVideo": "Watch Video"
+    },
+    "gallery": {
+      "title": "Reach Surgical Has Three R&D Centers Located in the United States, Tianjin and Shanghai",
+      "description1": "As a technology-based enterprise, Reach Surgical (Tianjin) Co., Ltd. develops, produces and distributes specialised automatic suture units and surgical energy products.",
+      "description2": "The company is dedicated to providing open staplers, endoscopic staplers as well as energy products for minimally invasive surgery. Its high-quality and open surgical instruments along with laparoscopy surgical instruments are well applied for general, thoracic, obstetrics and gynecology surgeries."
+    },
+    "hospitals": {
+      "title": "Reach Surgical Is a Highly Acclaimed Supplier for More Than 500 Domestic Hospitals",
+      "description": "Its products have been exported to more than 30 countries including the United States, the United Kingdom, South Korea, Germany, Italy, Australia and Brazil."
+    },
+    "enterprise": {
+      "title": "High-tech Enterprise",
+      "quote": "\"Making quality healthcare more affordable and accessible for everyone: Better health for better life\"",
+      "description1": "Reach Surgical has been recognized as high-tech enterprise for many consecutive years and rated as a leading technology firm in Tianjin for many times. Its high-quality products have won lots of honors: The ultrasonic hemostatic cutting system CSUS6000 was awarded the \"Tianjin Science and Technology Progress Award\" in 2020; the surgical staplers won the title of \"Tianjin Famous Product Brand\" in 2019.",
+      "description2": "In 2019, Reach Surgical was formally incorporated into the Genesis MedTech Group.",
+      "description3": "The Genesis MedTech Group was founded by professionals with rich global and local experiences in the medical device industry. Genesis specializes in the R&D, production and marketing of high-value medical consumables with a large portfolio of surgical products, neuro, peripheral, cardiac and tumor intervention solutions.",
+      "description4": "Together with the Genesis MedTech Group, Reach Surgical firmly sticks to the values of integrity, innovation, openness and inclusiveness as well as efficient implementation. The company is devoted to the fulfillment of the mission \"Making quality healthcare more affordable and accessible for everyone: Better health for better life\".",
+      "contactUs": "Contact Us"
+    },
+    "socialResponsibility": {
+      "title": "Social Responsibility",
+      "description1": "Together with the Genesis MedTech Group, Reach Surgical firmly sticks to the values of integrity, innovation, openness and inclusiveness as well as efficient implementation. The company is devoted to the fulfillment of the mission \"Making quality healthcare more affordable and accessible for everyone: Better health for better life\". As a well-known national brand, Reach Surgical has always adhered to our responsibility toward clients, employees as well as society and environment.",
+      "description2": "For Reach Surgical Co. Ltd., the product quality enjoys the top priority. All surgical instruments must undergo strict quality controls. The R&D and production base in Tianjin consistently offer safe minimally invasive surgery products with high quality. We feel responsible for our physicians and patients."
+    }
+  },
+  "contact": {
+    "title": "Contact Us",
+    "promoCode": "Promo Code",
+    "fullName": "Full Name *",
+    "email": "Email *",
+    "phone": "Phone *",
+    "country": "Country *",
+    "interests": "What are you interested in: *",
+    "surgicalStapling": "Surgical Stapling",
+    "ultrasonicSurgery": "Ultrasonic Surgery Generators & Shears",
+    "message": "Leave a message *",
+    "submit": "Submit",
+    "formSuccess": "Form submitted successfully!"
+  },
+  "support": {
+    "hero": {
+      "title": "Support",
+      "description": "Access technical documentation, safety information, and instructions for use for all Reach Surgical products"
+    },
+    "tabs": {
+      "sscp": "Summary of Safety and Clinical Performance",
+      "instructions": "Instructions for Use Download"
+    },
+    "sscp": {
+      "title": "Summary of Safety and Clinical Performance - SSCP"
+    },
+    "instructions": {
+      "title": "Instructions for Use Download",
+      "note": "(click on the file name to download)"
+    }
+  }
+} 

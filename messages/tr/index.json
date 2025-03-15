@@ -1,0 +1,381 @@
+{
+  "header": {
+    "surgicalStapling": "Cerrahi Zımbalama",
+    "omnia": "Omnia",
+    "iReachMagnum": "iReach Magnum",
+    "openCircular": "Açık Dairesel",
+    "openLinear": "Açık Lineer",
+    "openPPH": "Açık PPH",
+    "energy": "Enerji",
+    "enerReachOP9": "Ener Reach OP9 Jeneratör",
+    "enerSealVesselSealer": "Enerseal Damar Mühürleyici/Ayırıcı",
+    "soundReach8000": "Sound Reach 8000",
+    "sr7SeriesShears": "SR7 Serisi Makaslar",
+    "robotics": "Robotik",
+    "omnibot": "Omnibot",
+    "aboutUs": "Hakkımızda",
+    "contact": "İletişim",
+    "support": "Destek",
+    "news": "Haberler"
+  },
+  "products": {
+    "omnia": {
+      "hero": {
+        "title": "Omnia Zımbalama Platformu",
+        "subtitle": "En gelişmiş zımbalama platformu"
+      },
+      "overview": {
+        "title": "PRO SERİ / PRO PERFORMANS / PRO ZEKA",
+        "description": "OMNIA platformu, en zorlu cerrahlar için bile en kapsamlı, en uyarlanabilir aracı oluşturmak üzere zımbalama teknolojilerindeki en son yeniliklerimizi bir araya getirir."
+      },
+      "proRange": {
+        "title": "PRO Seri",
+        "description": "30mm, 45mm'den 60mm zımba uzunluğuna kadar, hem geleneksel hem de kademeli yükseklikte şarjörler. OMNIA platformu, en kapsamlı şarjör seçimini sunar. Cerrahlara nihai seçim özgürlüğü sağlar."
+      },
+      "proPerformance": {
+        "title": "PRO Performans",
+        "features": [
+          "Sabit örs tasarımı, özellikle dar alanlarda doku yerleşimini kolaylaştırır.",
+          "Yeni kademeli yükseklik şarjörleri, sıvı çıkarımını kolaylaştıran ve zımba oluşumunu iyileştiren basamaklı yüzeye sahiptir.",
+          "Tam güçlü otomatik çene açma/kapama özelliği, doku yırtılmasını azaltır ve güvenliği artırır.",
+          "Cerrah ayrıca daha iyi erişim için çeneyi yarıya kapatmak üzere kısa basabilir."
+        ]
+      },
+      "proIntelligence": {
+        "title": "PRO Zeka",
+        "features": [
+          "Gömülü çip, bağlandığı anda farklı şarjör modellerini akıllıca tanır ve optimum etki için belirli sıkıştırma ve ateşleme işlemi parametrelerini uygular.",
+          "Ateşleme işlemi, çeşitli doku kalınlıklarına uyarlanabilir şekilde programlanmıştır ve kesme hızını buna göre ayarlar.",
+          "Zımbalayıcı, doku kaymasını en aza indirmek ve zımba deformasyonunu azaltmak için her ateşleme işleminin son kısmında kademeli olarak yavaşlar."
+        ]
+      },
+      "specifications": {
+        "title": "Teknik Özellikler",
+        "downloadBrochure": "Broşürü İndir",
+        "contactSales": "İletişime Geç"
+      },
+      "cta": {
+        "title": "Omnia ile İlgileniyor musunuz?",
+        "subtitle": "Bugün Bizimle İletişime Geçin",
+        "button": "İletişime Geçin"
+      }
+    },
+    "iReachMagnum": {
+      "hero": {
+        "title": "iReach Magnum Elektrikli Zımbalayıcı",
+        "subtitle": "Cerrahi Zımbalama Yeniden Tanımlandı"
+      },
+      "nextBigThing": {
+        "subtitle": "ENDO III Zımbalama",
+        "title": "Yeni Büyük Adım",
+        "description1": "ENDO III zımbalama sisteminin temel unsurları şimdi yeniden tasarlanarak tamamen yeni bir varlık olarak bir araya getirildi.",
+        "description2": "İmza niteliğindeki doku sıkıştırma özelliği, pürüzsüz elektrikli ateşleme ile eşleştirilerek ameliyathanede yeni olasılıkların kapısını açan benzeri görülmemiş bir deneyim sunuyor."
+      },
+      "ergonomicDesign": {
+        "title": "Ergonomik Tasarım",
+        "description": "iReach Magnum, her iki yönde 5 kademede 55°'ye kadar eklemlenme sunar."
+      },
+      "optimisedCompression": {
+        "title": "Optimize Edilmiş Sıkıştırma",
+        "description": "iReach Magnum ile 15 saniyelik ön sıkıştırma bildirimi, geliştirilmiş sıkıştırma gücü ve güvenlik düğmesi elde edersiniz."
+      },
+      "intelligentFiring": {
+        "title": "Akıllı Ateşleme",
+        "description": "Mikroçipler, gelen sinyalleri dinamik olarak izler ve çıktıyı ayarlar."
+      },
+      "cuttingEdge": {
+        "title": "En Son Teknoloji",
+        "description": "Yüksek kapasiteli lityum pil ile çalışan iReach Magnum, prosedür boyunca tutarlı performans sunar.",
+        "features": [
+          "Tutarlı zımba oluşumu",
+          "Pürüzsüz ateşleme",
+          "Azaltılmış doku travması"
+        ]
+      },
+      "cta": {
+        "title": "iReach Magnum'u Denemeye Hazır mısınız?",
+        "subtitle": "Bir demo için satış ekibimizle iletişime geçin",
+        "button": "İletişime Geçin"
+      }
+    },
+    "openCircular": {
+      "title": "REACH ACS-D Serisi Dairesel Zımbalayıcılar",
+      "features": {
+        "stapleHeight": "Hassas Zımba Yükseklik Kontrolü",
+        "stapleHeightDesc": "Zımba Yükseklik Gösterge penceresi ile.",
+        "anvilDesign": "İnce Örs Tasarımı",
+        "anvilDesignDesc": "İşlemler sırasında dar alanlarda kolay manevra yapılmasını sağlar.",
+        "moreStaples": "Kartuşta Daha Fazla Zımba",
+        "moreStaplesDesc": "Sürdürülen sıkıştırma ile daha iyi hemostaz sağlar.",
+        "arcIndicator": "180° Yay Gösterge Penceresi",
+        "arcIndicatorDesc": "Farklı açılardan sıkıştırma durumunu kolayca doğrulayın.",
+        "feedback": "Dokunsal ve Sesli Geri Bildirim",
+        "feedbackDesc": "Hekimlerin başarılı bir ateşlemeyi doğrulamasına yardımcı olur.",
+        "singleHandle": "Tek Kollu Tasarım",
+        "singleHandleDesc": "Daha kolay manevra ve ateşleme."
+      }
+    },
+    "openLinear": {
+      "title": "REACH FLCLinear Kesici ve Tek Kullanımlık Yükleme Üniteleri",
+      "features": {
+        "flcCutter": "FLC Kesici",
+        "flcCutterDesc": "Cerrahlara birleşik sıkıştırma, güvenli doku kavrama kuvveti ve üstün bıçak tasarımı ile üstün kesim ve hemostaz elde etmelerine yardımcı olur.",
+        "reloadSizes": "Çeşitli Şarjör Boyutları",
+        "reloadSizesDesc": "Cerrahlar, klinik güvenliği sağlamak için güvenlik kilidi mekanizmaları ile çeşitli şarjör boyutları arasından seçim yapabilirler."
+      }
+    },
+    "openPPH": {
+      "title": "REACH PPH-33D Hemoroid ve Prolapsus için İşlem Seti",
+      "features": {
+        "adjustableStaple": "Ayarlanabilir Zımba Yüksekliği",
+        "adjustableStapleDesc": "(0.8~1.5mm) zımbalanmış doku kalınlığını hassas bir şekilde kontrol eder.",
+        "staplers": "32 Zımbalayıcı",
+        "staplersDesc": "Daha iyi hemostaz ve eşit basınç sağlar.",
+        "sutureThreads": "4 Sütür İpliği Deliği",
+        "sutureThreadsDesc": "Sütür ipliklerinin kolay alınmasını sağlar.",
+        "fixedAnvil": "Sabit Örs",
+        "fixedAnvilDesc": "Kazara ayrılma riskini azaltır.",
+        "largerHousing": "Daha Büyük Gövde Boşluğu",
+        "largerHousingDesc": "Zımbalama işlemi sırasında daha fazla dokuya izin verir.",
+        "centralRod": "63mm Uzunluğunda Merkezi Çubuk",
+        "centralRodDesc": "İşlem sırasında daha iyi görüş sağlar."
+      }
+    }
+  },
+  "home": {
+    "hero": {
+      "title": "Cerrahi İnovasyonda Lider",
+      "subtitle": "Yenilikçi cerrahi çözümler ile sağlık profesyonellerine güç veriyoruz",
+      "button": "Daha Fazla Keşfet"
+    },
+    "products": {
+      "title": "Ürünlerimiz",
+      "subtitle": "Yenilikçi cerrahi çözümler",
+      "viewAll": "Tümünü Görüntüle",
+      "descriptions": {
+        "omnia": "Hassas doku yaklaştırma için gelişmiş cerrahi zımbalama sistemi.",
+        "iReachMagnum": "Göğüs ve karın prosedürleri için tasarlanmış güçlü zımbalama cihazı.",
+        "energy": "Hemostaz ve doku diseksiyonu için yenilikçi enerji çözümleri."
+      }
+    },
+    "surgicalSection": {
+      "title": "Cerrahi Zımbalama ve Enerji Ürünleri",
+      "subtitle": "Cerrahinin Kapsamını Genişletiyoruz",
+      "button": "Hakkımızda"
+    },
+    "news": {
+      "title": "Haberler ve Güncellemeler",
+      "viewAll": "Tümünü Görüntüle",
+      "readMore": "Devamını Oku",
+      "items": {
+        "news1": {
+          "date": "15 Mayıs 2024",
+          "title": "Yeni Omnia Zımbalayıcı FDA Onayı Aldı",
+          "content": "En son cerrahi zımbalama cihazımız, genel ve göğüs prosedürlerinde kullanım için FDA onayı aldı."
+        },
+        "news2": {
+          "date": "28 Nisan 2024",
+          "title": "Reach Surgical Avrupa Dağıtımını Genişletiyor",
+          "content": "Yenilikçi cerrahi çözümlerimizi daha fazla sağlık hizmeti sağlayıcısına ulaştırmak için Avrupa genelinde genişletilmiş dağıtım ağımızı duyurmaktan heyecan duyuyoruz."
+        },
+        "news3": {
+          "date": "10 Mart 2024",
+          "title": "Yeni Araştırma Ortaklığı Duyuruldu",
+          "content": "Reach Surgical, yeni nesil cerrahi teknolojileri geliştirmek için önde gelen tıbbi araştırma kurumlarıyla ortaklık kuruyor."
+        }
+      }
+    }
+  },
+  "footer": {
+    "products": "Ürünler",
+    "company": "Şirket",
+    "support": "Destek",
+    "contactUs": "Bize Ulaşın",
+    "copyright": "© 2024 Reach Surgical. Tüm hakları saklıdır.",
+    "privacyPolicy": "Gizlilik Politikası",
+    "termsOfUse": "Kullanım Koşulları",
+    "home": "Ana Sayfa",
+    "news": "Haberler",
+    "contact": "İletişim",
+    "subscribeTitle": "Bültenimize Abone Olun",
+    "emailPlaceholder": "E-posta Adresinizi Girin",
+    "joinButton": "Katıl",
+    "address": "120 Xinxing Road West Zone, TEDA 300462 Tianjin Çin",
+    "surgicalStapling": "Cerrahi Zımbalama",
+    "energy": "Enerji",
+    "aboutUs": "Hakkımızda"
+  },
+  "energy": {
+    "enerReach": {
+      "title": "ENER REACH OP9",
+      "subtitle": "Çift Çıkışlı Enerji Platformu",
+      "watchVideo": "Tanıtım videosunu izle",
+      "tissueSenseTechnology": {
+        "title": "Doku Algılama Teknolojisi",
+        "description": "Doku Algılama teknolojisi, alet çenesindeki sinyalleri sürekli olarak izler ve en iyi mühürleme, hızlı kesme ve minimum ısı oluşumu için gücü akıllıca ayarlar."
+      },
+      "productFeatures": {
+        "title": "Ürün Özellikleri",
+        "feature1": "7mm Damar Mühürleme",
+        "feature2": "RF ve Ultrasonik Çift Enerji Platformu",
+        "feature3": "7 inç Dokunmatik Ekran",
+        "feature4": "Çok Dilli Arayüz"
+      },
+      "contactUs": "Bize Ulaşın",
+      "downloadBrochure": "Broşürü İndir"
+    },
+    "enersealVesselSealer": {
+      "title": "Enerseal Damar Mühürleyici/Ayırıcı",
+      "subtitle": "Gelişmiş Damar Mühürleme Teknolojisi",
+      "description": "Minimal termal yayılım ile hassas damar mühürleme ve doku bölünmesi için tasarlanmış, optimal cerrahi sonuçlar sağlar.",
+      "antiStickingTechnology": {
+        "title": "Yapışmayı Önleyen Teknoloji",
+        "description": "Özel yapışmayı önleyen kaplamalarımız, yapışmayı en aza indirir, eskar oluşumunu azaltır ve prosedürler sırasında temizliği kolaylaştırarak daha pürüzsüz ve daha verimli bir deneyim sağlar."
+      },
+      "precisionSealing": {
+        "title": "Hassas Mühürleme",
+        "description": "Gelişmiş enerji iletim sistemi, minimal termal yayılım ile tutarlı damar mühürleme sağlar. Hassasiyetin çok önemli olduğu hassas prosedürler için idealdir."
+      },
+      "contactUs": "Bize Ulaşın",
+      "downloadBrochure": "Broşürü İndir"
+    },
+    "soundReach8000": {
+      "title": "Sound Reach 8000",
+      "subtitle": "İlerleyen Enerji",
+      "brandNewPlatform": {
+        "title": "Yepyeni Platform",
+        "description1": "Sound Reach ultrasonik platformu büyük bir adım atıyor.",
+        "description2": "8000 jeneratörü, cerrahinin yolunu değiştiren yepyeni bir ayırt edici tasarım ve benzersiz özellikler sunar."
+      },
+      "compactDesign": {
+        "title": "Kompakt Tasarım",
+        "description": "Dokunmatik arayüz ve çok dilli."
+      },
+      "tissueSenseTechnology": {
+        "title": "Doku Algılama Teknolojisi",
+        "description1": "Performansı değiştiren çığır açan bir teknoloji.",
+        "description2": "Doku Algılama, 8000 Jeneratörünün makaslardan gelen sinyalleri eş zamanlı olarak izlemesine ve doku direncine göre enerji çıkışını ayarlamasına olanak tanıyan hem donanım hem de yazılımın birleşimidir.",
+        "description3": "Bu, doku kalınlığı ve varsayılan ayarlardan bağımsız olarak pürüzsüz ve tutarlı bir kesme deneyimi sağlar, çıkış ayarlarını sürekli olarak ayarlama ihtiyacını ortadan kaldırır, böylece cerrahlar artık ameliyata odaklanabilir."
+      },
+      "pdSeriesShears": {
+        "title": "PD Serisi Makaslar",
+        "description": "PD Serisi Makaslar, temel teknoloji atılımı ve çok amaçlı tasarımı ile yeni kullanım olanakları sunar, ameliyatlarda tutarlı performans sunmak için ideal bir seçim haline getirir.",
+        "contactUs": "Bize Ulaşın"
+      },
+      "contactUs": "Bize Ulaşın"
+    },
+    "sr7SeriesShears": {
+      "title": "SR7 Serisi Makaslar",
+      "subtitle": "İki ergonomik seçenekle 7mm Damar Mühürleme",
+      "tissueSense": {
+        "title": "Doku Algılama 2.0",
+        "description1": "Devrim niteliğindeki Doku Algılama 2.0 teknolojisi, cerrahlara eşsiz bir hassasiyet sağlayan önemli bir ilerlemeyi temsil eder.",
+        "description2": "Donanım ve yazılımı sorunsuz bir şekilde entegre eden bu gelişmiş sistem, makaslardan gelen sinyalleri izler ve çeneler arasındaki doku kalınlığına göre enerji çıkışını dinamik olarak ayarlar.",
+        "description3": "Bu, cerrahın farklı doku kalınlıklarına uyum sağlamak için güç seviyesini sürekli olarak ayarlama ihtiyacını ortadan kaldırır."
+      },
+      "vesselSealing": {
+        "title": "Damar Mühürleme",
+        "description1": "SR7 Serisi Makaslar, 7mm'ye kadar damarları güvenli bir şekilde mühürler ve keser.",
+        "description2": "Gelişmiş enerji iletim sistemi, minimal termal yayılım ile tutarlı damar mühürleme sağlar.",
+        "description3": "Ergonomik tasarım, uzun prosedürler sırasında cerrah konforunu artırır."
+      },
+      "contactUs": "Bize Ulaşın",
+      "downloadBrochure": "Broşürü İndir"
+    }
+  },
+  "robotics": {
+    "omnibot": {
+      "title": "OMNIBOT",
+      "subtitle": "Cerrahi Robotik Platform",
+      "innovation": {
+        "title": "Yeni Yüksekliklerden İnovasyon",
+        "description1": "Reach Surgical, alanı devrim niteliğinde değiştirmek için tasarlanmış en son teknoloji platformunda yeni bir bakış açısı sunmaktan gurur duyar.",
+        "description2": "Kullanıcı dostu arayüzü, geniş kol seçenekleri ve son teknoloji optik ve görsel sistemi ile uygulamanızda mükemmellik için yeni bir standart belirler."
+      },
+      "multiport": {
+        "title": "OMNIBOT",
+        "subtitle": "Çok Portlu Sistem",
+        "description": "Omnibot MP sistemi, her biri yedi serbestlik derecesi sunan dört robotik kol ile donatılmıştır. Bu tasarım, hassas port yerleşimi ve kenetleme için geniş hareket aralığı sağlayarak, çeşitli prosedür ihtiyaçlarını karşılamak için doğal el becerisi sunar."
+      },
+      "features": {
+        "title": "Ürün Özellikleri",
+        "diverseEcosystem": {
+          "title": "Çeşitli Ekosistem",
+          "description": "Platformumuz, endoskopik görüntüleme sistemleri, cerrahi aletler, enerji cihazları ve zımbalama portföylerini kapsayan robotik cerrahi için kapsamlı bir çözüm sunar. Bu eksiksiz paket, ameliyathanede çok yönlülük ve verimlilik sağlayarak her cerrahi ekip ve klinik yaklaşıma hitap eder."
+        },
+        "precisionControl": {
+          "title": "Hassas Kontrol",
+          "description": "Aletlerimiz insan bileğini taklit ederek, 360° üç boyutlu dönüş ve insan eline benzer esneklik sunar. Bu gelişmiş tasarım, el titremelerini filtreler ve operasyonlar sırasında gelişmiş stabilite ve hassasiyet sağlar."
+        },
+        "telesurgery": {
+          "title": "Tele-cerrahi",
+          "description": "5G teknolojisinin tüm potansiyelini kullanan tele-cerrahi çözümlerimiz, uzun mesafeli cerrahi kavramını gerçeğe dönüştürür. Cerrahın konsolunun hastadan 10.000 milden fazla uzakta olduğu vakalarda başarıyla uygulanan sistemimiz, uzaktan cerrahi yeteneklerinde yeni ölçütler belirler."
+        },
+        "advancedImaging": {
+          "title": "Gelişmiş Görüntüleme",
+          "description": "Gelişmiş görüntüleme teknolojimiz, son teknoloji 3D yüksek çözünürlüklü sistemler, Floresan görüntüleme sistemleri ve son derece düşük görüntü gecikmesi içerir. Bu kombinasyon, cerrahi alanın eşsiz netlik ve duyarlılıkla ayrıntılı görselleştirilmesini sağlar."
+        }
+      }
+    }
+  },
+  "about": {
+    "hero": {
+      "title": "Cerrahinin Kapsamını Genişletin",
+      "watchVideo": "Videoyu İzle"
+    },
+    "gallery": {
+      "title": "Reach Surgical'ın Amerika Birleşik Devletleri, Tianjin ve Şangay'da Üç Ar-Ge Merkezi Bulunmaktadır",
+      "description1": "Teknoloji tabanlı bir işletme olarak Reach Surgical (Tianjin) Co., Ltd. özel otomatik dikiş üniteleri ve cerrahi enerji ürünleri geliştirir, üretir ve dağıtır.",
+      "description2": "Şirket, minimal invaziv cerrahi için açık zımbalayıcılar, endoskopik zımbalayıcılar ve enerji ürünleri sağlamaya adanmıştır. Yüksek kaliteli açık cerrahi aletleri ve laparoskopi cerrahi aletleri genel, göğüs, doğum ve jinekoloji ameliyatlarında iyi uygulanmaktadır."
+    },
+    "hospitals": {
+      "title": "Reach Surgical, 500'den Fazla Yerel Hastane İçin Yüksek Beğeni Toplayan Bir Tedarikçidir",
+      "description": "Ürünleri Amerika Birleşik Devletleri, Birleşik Krallık, Güney Kore, Almanya, İtalya, Avustralya ve Brezilya dahil olmak üzere 30'dan fazla ülkeye ihraç edilmiştir."
+    },
+    "enterprise": {
+      "title": "Yüksek Teknoloji İşletmesi",
+      "quote": "\"Kaliteli sağlık hizmetlerini herkes için daha uygun fiyatlı ve erişilebilir kılmak: Daha iyi sağlık için daha iyi yaşam\"",
+      "description1": "Reach Surgical, birçok yıl üst üste yüksek teknoloji işletmesi olarak tanınmış ve birçok kez Tianjin'de önde gelen teknoloji firması olarak değerlendirilmiştir. Yüksek kaliteli ürünleri birçok onur kazanmıştır: Ultrasonik hemostatik kesme sistemi CSUS6000, 2020 yılında \"Tianjin Bilim ve Teknoloji İlerleme Ödülü\"nü kazanmıştır; cerrahi zımbalayıcılar 2019 yılında \"Tianjin Ünlü Ürün Markası\" unvanını kazanmıştır.",
+      "description2": "2019 yılında Reach Surgical, resmen Genesis MedTech Group'a dahil edilmiştir.",
+      "description3": "Genesis MedTech Group, tıbbi cihaz endüstrisinde zengin küresel ve yerel deneyimlere sahip profesyoneller tarafından kurulmuştur. Genesis, cerrahi ürünler, nöro, periferik, kardiyak ve tümör müdahale çözümleri içeren geniş bir portföy ile yüksek değerli tıbbi sarf malzemelerinin Ar-Ge, üretim ve pazarlamasında uzmanlaşmıştır.",
+      "description4": "Genesis MedTech Group ile birlikte Reach Surgical, dürüstlük, yenilikçilik, açıklık ve kapsayıcılık ile verimli uygulama değerlerine sıkı sıkıya bağlıdır. Şirket, \"Kaliteli sağlık hizmetlerini herkes için daha uygun fiyatlı ve erişilebilir kılmak: Daha iyi sağlık için daha iyi yaşam\" misyonunun gerçekleştirilmesine adanmıştır.",
+      "contactUs": "Bize Ulaşın"
+    },
+    "socialResponsibility": {
+      "title": "Sosyal Sorumluluk",
+      "description1": "Genesis MedTech Group ile birlikte Reach Surgical, dürüstlük, yenilikçilik, açıklık ve kapsayıcılık ile verimli uygulama değerlerine sıkı sıkıya bağlıdır. Şirket, \"Kaliteli sağlık hizmetlerini herkes için daha uygun fiyatlı ve erişilebilir kılmak: Daha iyi sağlık için daha iyi yaşam\" misyonunun gerçekleştirilmesine adanmıştır. Tanınmış bir ulusal marka olarak Reach Surgical, müşterilere, çalışanlara ve topluma ve çevreye karşı sorumluluğumuza her zaman bağlı kalmıştır.",
+      "description2": "Reach Surgical Co. Ltd. için ürün kalitesi en yüksek önceliğe sahiptir. Tüm cerrahi aletler sıkı kalite kontrollerinden geçmelidir. Tianjin'deki Ar-Ge ve üretim üssü, tutarlı bir şekilde yüksek kaliteli güvenli minimal invaziv cerrahi ürünleri sunmaktadır. Hekimlerimiz ve hastalarımız için sorumluluk hissediyoruz."
+    }
+  },
+  "contact": {
+    "title": "Bize Ulaşın",
+    "promoCode": "Promosyon Kodu",
+    "fullName": "Ad Soyad *",
+    "email": "E-posta *",
+    "phone": "Telefon *",
+    "country": "Ülke *",
+    "interests": "İlgilendiğiniz konu: *",
+    "surgicalStapling": "Cerrahi Zımbalama",
+    "ultrasonicSurgery": "Ultrasonik Cerrahi Jeneratörleri ve Makasları",
+    "message": "Mesaj bırakın *",
+    "submit": "Gönder",
+    "formSuccess": "Form başarıyla gönderildi!"
+  },
+  "support": {
+    "hero": {
+      "title": "Destek",
+      "description": "Tüm Reach Surgical ürünleri için teknik dokümantasyon, güvenlik bilgileri ve kullanım talimatlarına erişin"
+    },
+    "tabs": {
+      "sscp": "Güvenlik ve Klinik Performans Özeti",
+      "instructions": "Kullanım Talimatları İndirme"
+    },
+    "sscp": {
+      "title": "Güvenlik ve Klinik Performans Özeti - SSCP"
+    },
+    "instructions": {
+      "title": "Kullanım Talimatları İndirme",
+      "note": "(indirmek için dosya adına tıklayın)"
+    }
+  }
+} 
