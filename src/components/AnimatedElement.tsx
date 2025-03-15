@@ -47,7 +47,7 @@ const AnimatedElement = ({
 }: AnimatedElementProps) => {
   const controls = useAnimation();
   const ref = useRef(null);
-  const inView = useInView(ref, { threshold, once });
+  const inView = useInView(ref, { amount: threshold, once });
   const [hasAnimated, setHasAnimated] = useState(false);
 
   useEffect(() => {

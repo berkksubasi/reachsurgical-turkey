@@ -75,8 +75,10 @@ export default function SoundReach8000Page() {
     // Cleanup
     return () => {
       window.removeEventListener('scroll', handleScroll);
-      if (videoRef1.current) video1Observer.unobserve(videoRef1.current);
-      if (videoRef2.current) video2Observer.unobserve(videoRef2.current);
+      const video1 = videoRef1.current;
+      const video2 = videoRef2.current;
+      if (video1) video1Observer.unobserve(video1);
+      if (video2) video2Observer.unobserve(video2);
     };
   }, []);
 

@@ -78,8 +78,10 @@ export default function SR7SeriesShearsPage() {
     // Cleanup
     return () => {
       window.removeEventListener('scroll', handleScroll);
-      if (backgroundVideoRef1.current) bgVideo1Observer.unobserve(backgroundVideoRef1.current);
-      if (backgroundVideoRef2.current) bgVideo2Observer.unobserve(backgroundVideoRef2.current);
+      const video1 = backgroundVideoRef1.current;
+      const video2 = backgroundVideoRef2.current;
+      if (video1) bgVideo1Observer.unobserve(video1);
+      if (video2) bgVideo2Observer.unobserve(video2);
     };
   }, []);
 
