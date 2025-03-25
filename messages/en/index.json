@@ -16,7 +16,8 @@
     "aboutUs": "About Us",
     "contact": "Contact",
     "support": "Support",
-    "news": "News"
+    "news": "News",
+    "visionMission": "Vision & Mission"
   },
   "products": {
     "omnia": {
@@ -275,6 +276,10 @@
       "subtitle": "Expanding the Scope of Surgery",
       "button": "About Us"
     },
+    "partnersSection": {
+      "title": "Our Partners",
+      "subtitle": "Working together with our trusted global partners"
+    },
     "news": {
       "title": "News & Updates",
       "viewAll": "View All",
@@ -309,6 +314,7 @@
     "home": "Home",
     "news": "News",
     "contact": "Contact",
+    "visionMission": "Vision & Mission",
     "subscribeTitle": "Subscribe to Our Newsletter",
     "emailPlaceholder": "Enter your email address",
     "joinButton": "Join",
@@ -375,6 +381,33 @@
     "instructions": {
       "title": "Instructions for Use Download",
       "note": "(click on the file name to download)"
+    }
+  },
+  "visionMission": {
+    "title": "Vision & Mission",
+    "subtitle": "Shaping the Future",
+    "vision": {
+      "title": "Our Vision",
+      "description": "To become a world brand that continuously develops with scientific and innovative approaches, creating value for our customers, employees, and stakeholders in the healthcare sector, where being our first priority is to be proud of working together."
+    },
+    "mission": {
+      "title": "Our Mission",
+      "description": "• To introduce products to the market that facilitate the diagnosis and treatment process of diseases in the healthcare ecosystem, enable our patients and physicians to access innovative products, and support the effective cost management of the Public sector.\n\n• To increase market share with the understanding of reaching our target world market.\n\n• To ensure profitable and sustainable growth by creating employment in the healthcare sector while maintaining our company's strong financial structure."
+    },
+    "values": {
+      "title": "Our Values",
+      "innovation": {
+        "title": "Innovation",
+        "description": "Continuously developing new solutions and technologies"
+      },
+      "quality": {
+        "title": "Quality",
+        "description": "Maintaining the highest standards in all our products"
+      },
+      "integrity": {
+        "title": "Integrity",
+        "description": "Operating with transparency and ethical principles"
+      }
     }
   }
 } 

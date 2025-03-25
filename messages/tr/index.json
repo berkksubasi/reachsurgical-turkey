@@ -16,7 +16,8 @@
     "aboutUs": "Hakkımızda",
     "contact": "İletişim",
     "support": "Destek",
-    "news": "Haberler"
+    "news": "Haberler",
+    "visionMission": "Vizyon & Misyon"
   },
   "products": {
     "omnia": {
@@ -184,6 +185,10 @@
           "content": "Reach Surgical, yeni nesil cerrahi teknolojileri geliştirmek için önde gelen tıbbi araştırma kurumlarıyla ortaklık kuruyor."
         }
       }
+    },
+    "partnersSection": {
+      "title": "İş Ortaklarımız",
+      "subtitle": "Güvenilir global iş ortaklarımızla birlikte çalışıyoruz"
     }
   },
   "footer": {
@@ -197,6 +202,7 @@
     "home": "Ana Sayfa",
     "news": "Haberler",
     "contact": "İletişim",
+    "visionMission": "Vizyon & Misyon",
     "subscribeTitle": "Bültenimize Abone Olun",
     "emailPlaceholder": "E-posta Adresinizi Girin",
     "joinButton": "Katıl",
@@ -376,6 +382,33 @@
     "instructions": {
       "title": "Kullanım Talimatları İndirme",
       "note": "(indirmek için dosya adına tıklayın)"
+    }
+  },
+  "visionMission": {
+    "title": "Vizyon & Misyon",
+    "subtitle": "Geleceği Şekillendiriyoruz",
+    "vision": {
+      "title": "Vizyonumuz",
+      "description": "Sağlık sektöründe birinci önceliğimiz müşterilerimize , çalışanlarımıza , paydaşlarımıza değer yaratan birlikte iş yapmaktan gurur duyulan bilimsel ve yenilikçi yaklaşımlarla sürekli gelişen bir dünya markası olmak."
+    },
+    "mission": {
+      "title": "Misyonumuz",
+      "description": "• Sağlık ekosisteminde hastalıkların tanı ve tedavi sürecini kolaylaştıran , hastalarımızın ve hekimlerimizin yenilikçi ürünlere ulaşa bilmesini sağlayan , Kamunun etkin maliyet yönetimine destek olan ürünleri pazara sunmak.\n\n• Hedefimiz olan dünya pazarına ulaşma anlayışı ile pazar payını arttırmak.\n\n• Şirketimizin güçlü finansal yapısını koruyarak sağlık sektöründe istihdam yaratarak karlı ve sürdürülebilir büyüme sağlamak."
+    },
+    "values": {
+      "title": "Değerlerimiz",
+      "innovation": {
+        "title": "İnovasyon",
+        "description": "Sürekli gelişim ve yenilikçi çözümler için çalışıyoruz."
+      },
+      "quality": {
+        "title": "Kalite",
+        "description": "En yüksek kalite standartlarını koruyarak güvenilir ürünler sunuyoruz."
+      },
+      "integrity": {
+        "title": "Dürüstlük",
+        "description": "Etik değerlerimizden ödün vermeden, şeffaf ve güvenilir bir şekilde çalışıyoruz."
+      }
     }
   }
 } 

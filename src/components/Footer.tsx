@@ -48,14 +48,19 @@ const Footer = () => {
                 </div>
               </li>
               <li>
-                <Link href={createHref('/about')} className="hover:text-gray-300">
+                <Link href={createHref('/about')} className="text-gray-300 hover:text-white">
                   {t('aboutUs')}
                 </Link>
               </li>
               <li>
-                <a href="https://www.int.reachsurgical.com/news" target="_blank" rel="noopener noreferrer" className="hover:text-gray-300">
+                <Link href={createHref('/vision-mission')} className="text-gray-300 hover:text-white">
+                  {t('visionMission')}
+                </Link>
+              </li>
+              <li>
+                <Link href={createHref('/news')} className="text-gray-300 hover:text-white">
                   {t('news')}
-                </a>
+                </Link>
               </li>
               <li>
                 <Link href={createHref('/contact')} className="hover:text-gray-300">
@@ -134,11 +139,11 @@ const Footer = () => {
             <div className="flex items-center mb-4 md:mb-0">
               <Link href={createHref('/')}>
                 <Image 
-                  src="/images/logo.avif" 
+                  src="/images/logo.png" 
                   alt="Reach Surgical Logo" 
-                  width={80} 
-                  height={30}
-                  className="h-8 w-auto"
+                  width={160} 
+                  height={60}
+                  className="h-16 w-auto"
                 />
               </Link>
               <span className="ml-4">Reach Surgical</span>

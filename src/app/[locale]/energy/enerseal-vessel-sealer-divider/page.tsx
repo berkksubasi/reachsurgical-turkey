@@ -56,7 +56,7 @@ export default function EnersealVesselSealerDividerPage() {
         {/* Hero Section - Ürün Görseli */}
         <section className="h-screen flex flex-col items-center justify-center sticky top-0 z-10 bg-white">
           <div className="container mx-auto px-4 text-center">
-            <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold text-[#002b49] mb-4">
+            <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-[#002b49] mb-4">
               {t('title')}
             </h1>
             <p className="text-xl md:text-2xl text-gray-600 mb-16">

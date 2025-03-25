@@ -54,14 +54,14 @@ export default function EnerReachPage() {
     <div className="flex flex-col min-h-screen">
       <Header />
       
-      <main className="flex-grow relative">
+      <main className="flex-grow relative overflow-x-hidden">
         {/* Hero Section */}
-        <section className="h-screen flex flex-col items-center justify-center sticky top-0 z-10 bg-white">
+        <section className="min-h-screen flex flex-col items-center justify-center relative bg-white px-4 py-16 md:py-0">
           <div className="container mx-auto px-4 text-center">
-            <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold text-[#002b49] mb-4">
+            <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold text-[#002b49] mb-4">
               {t('title')}
             </h1>
-            <p className="text-xl md:text-2xl text-gray-600 mb-16">
+            <p className="text-lg md:text-2xl text-gray-600 mb-8 md:mb-16">
               {t('subtitle')}
             </p>
             
@@ -77,7 +77,7 @@ export default function EnerReachPage() {
             
             <button 
               onClick={openVideoModal}
-              className="mt-12 text-lg text-gray-600 hover:text-[#002b49] transition-colors duration-300 underline"
+              className="mt-8 md:mt-12 text-lg text-gray-600 hover:text-[#002b49] transition-colors duration-300 underline"
             >
               {t('watchVideo')}
             </button>
@@ -85,21 +85,20 @@ export default function EnerReachPage() {
         </section>
         
         {/* Tissue Sense Technology Section */}
-        <section className="h-screen flex items-center sticky top-0 z-20 bg-gray-50">
+        <section className="min-h-screen flex items-center relative bg-gray-50 px-4 py-16 md:py-0">
           <div className="container mx-auto px-4">
-            <div className="flex flex-col md:flex-row items-center">
-              <div className="w-full md:w-1/2 md:pr-12 mb-12 md:mb-0">
-                <h2 className="text-4xl md:text-5xl font-bold text-[#002b49] mb-8">
+            <div className="flex flex-col md:flex-row items-center gap-8">
+              <div className="w-full md:w-1/2">
+                <h2 className="text-3xl md:text-5xl font-bold text-[#002b49] mb-6 md:mb-8">
                   {t('tissueSenseTechnology.title')}
                 </h2>
                 
-                <p className="text-lg text-gray-700">
+                <p className="text-base md:text-lg text-gray-700">
                   {t('tissueSenseTechnology.description')}
                 </p>
               </div>
               
               <div className="w-full md:w-1/2">
-                {/* Using the op9.avif image as a placeholder for the technology illustration */}
                 <div className="w-full h-auto">
                   <Image
                     src="/images/op9.avif"
@@ -115,9 +114,9 @@ export default function EnerReachPage() {
         </section>
         
         {/* Product Features Section */}
-        <section className="h-screen flex items-center sticky top-0 z-30 bg-white">
+        <section className="min-h-screen flex items-center relative bg-white px-4 py-16 md:py-0">
           <div className="container mx-auto px-4">
-            <h2 className="text-4xl md:text-5xl font-bold text-[#002b49] mb-16 text-center">
+            <h2 className="text-3xl md:text-5xl font-bold text-[#002b49] mb-8 md:mb-16 text-center">
               {t('productFeatures.title')}
             </h2>
             

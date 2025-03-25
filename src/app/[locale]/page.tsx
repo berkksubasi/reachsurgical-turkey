@@ -5,6 +5,7 @@ import Footer from '@/components/Footer';
 import Hero from '@/components/Hero';
 import ProductSection from '@/components/ProductSection';
 import NewsSection from '@/components/NewsSection';
+import PartnersSection from '@/components/PartnersSection';
 import Link from 'next/link';
 import { useTranslations, useLocale } from 'next-intl';
 
@@ -42,6 +43,7 @@ export default function Home() {
       </section>
       
       <NewsSection />
+      <PartnersSection />
       <Footer />
     </main>
   );

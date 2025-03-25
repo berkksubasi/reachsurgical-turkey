@@ -40,11 +40,11 @@ const Header = () => {
         <div className="flex items-center">
           <Link href={createHref('/')} className="mr-8">
             <Image 
-              src="/images/logo.avif" 
+              src="/images/logo.png" 
               alt="Reach Surgical Logo" 
-              width={100} 
-              height={40}
-              className="h-10 w-auto"
+              width={200} 
+              height={80}
+              className="h-20 w-auto"
             />
           </Link>
           
@@ -250,6 +250,10 @@ const Header = () => {
           
           <Link href={createHref('/support')} className="block px-3 py-2 text-white">
             {t('support')}
+          </Link>
+          
+          <Link href={createHref('/vision-mission')} className="block px-3 py-2 text-white">
+            {t('visionMission')}
           </Link>
           
           {/* Mobil menüde iletişim butonu - Özel arka plan renkli */}
