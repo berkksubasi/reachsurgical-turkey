@@ -135,13 +135,13 @@ const Footer = () => {
               <Link href={createHref('/')}>
                 <Image 
                   src="/images/logo.png" 
-                  alt="Reach Surgical Logo" 
+                  alt="Endolink Logo" 
                   width={160} 
                   height={60}
                   className="h-16 w-auto"
                 />
               </Link>
-              <span className="ml-4">Reach Surgical</span>
+              <span className="ml-4">Endolink Türkiye</span>
             </div>
             <div className="text-sm text-gray-400">
               <span>{t('address')}</span>
