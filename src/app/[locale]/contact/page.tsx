@@ -40,11 +40,50 @@ const ContactPage = () => {
     }));
   };
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    console.log('Form submitted:', formData);
-    // Burada form gönderme işlemi yapılabilir
-    alert(t('formSuccess'));
+    
+    try {
+      const response = await fetch('/api/contact', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({
+          promoCode: formData.promoCode,
+          fullName: formData.fullName,
+          email: formData.email,
+          phone: formData.phone,
+          country: formData.country,
+          interests: formData.interests,
+          message: formData.message
+        }),
+      });
+
+      const data = await response.json();
+
+      if (response.ok) {
+        alert(t('formSuccess'));
+        // Formu temizle
+        setFormData({
+          promoCode: '',
+          fullName: '',
+          email: '',
+          phone: '',
+          country: '',
+          interests: {
+            surgicalStapling: false,
+            ultrasonicSurgery: false
+          },
+          message: ''
+        });
+      } else {
+        throw new Error(data.details || 'Form gönderilemedi');
+      }
+    } catch (error: any) {
+      console.error('Form gönderim hatası:', error);
+      alert(error.message || 'Form gönderilirken bir hata oluştu. Lütfen daha sonra tekrar deneyin.');
+    }
   };
 
   return (

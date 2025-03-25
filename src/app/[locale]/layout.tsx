@@ -17,11 +17,13 @@ export const metadata: Metadata = {
 
 export default async function RootLayout({
   children,
-  params: { locale }
+  params,
 }: {
   children: React.ReactNode;
   params: { locale: string };
 }) {
+  const locale = await params.locale;
+
   // Desteklenen dilleri kontrol et
   const validLocales = ['tr', 'en'];
   if (!validLocales.includes(locale)) {

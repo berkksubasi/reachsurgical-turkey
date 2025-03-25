@@ -74,17 +74,17 @@ const Footer = () => {
             <h3 className="text-lg font-semibold mb-4">{t('contactUs')}</h3>
             <ul className="space-y-2">
               <li>
-                <a href="mailto:intl@reachsurgical.com" className="hover:text-gray-300">
-                  intl@reachsurgical.com
+                <a href="mailto:info@endolink.com.tr" className="hover:text-gray-300">
+                  info@endolink.com.tr
                 </a>
               </li>
               <li>
-                <a href="tel:+86-22-25326259" className="hover:text-gray-300">
-                  +86-22-25326259
+                <a href="tel:+90-322-123-4567" className="hover:text-gray-300">
+                  +90 322 123 4567
                 </a>
               </li>
               <li className="text-sm">
-                {t('address')}
+                Güzelyalı Mahallesi 81201. Sokak, No:10/A Çukurova,Adana - Türkiye
               </li>
             </ul>
             <div className="flex space-x-4 mt-4">
