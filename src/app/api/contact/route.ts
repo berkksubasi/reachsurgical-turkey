@@ -1,6 +1,15 @@
 import { NextResponse } from 'next/server';
 import nodemailer from 'nodemailer';
 
+interface EmailError {
+  code: string;
+  command: string;
+  errno: number;
+  syscall: string;
+  address: string;
+  port: number;
+}
+
 export async function POST(request: Request) {
   try {
     const body = await request.json();
@@ -56,36 +65,11 @@ export async function POST(request: Request) {
     console.log('E-posta gönderildi:', info.messageId);
 
     return NextResponse.json({ message: 'Form başarıyla gönderildi' }, { status: 200 });
-  } catch (error: any) {
-    console.error('E-posta gönderim hatası:', error);
-    
-    // Hata detaylarını logla
-    if (error.code) {
-      console.error('Hata kodu:', error.code);
-    }
-    if (error.command) {
-      console.error('Hata komutu:', error.command);
-    }
-    if (error.response) {
-      console.error('SMTP sunucu yanıtı:', error.response);
-    }
-    if (error.errno) {
-      console.error('Sistem hata kodu:', error.errno);
-    }
-    if (error.syscall) {
-      console.error('Sistem çağrısı:', error.syscall);
-    }
-    if (error.hostname) {
-      console.error('Host adı:', error.hostname);
-    }
-    
+  } catch (error) {
+    const emailError = error as EmailError;
+    console.error('E-posta gönderim hatası:', emailError);
     return NextResponse.json(
-      { 
-        error: 'Form gönderilirken bir hata oluştu',
-        details: error.message,
-        code: error.code,
-        command: error.command
-      },
+      { error: 'E-posta gönderilemedi. Lütfen daha sonra tekrar deneyin.' },
       { status: 500 }
     );
   }

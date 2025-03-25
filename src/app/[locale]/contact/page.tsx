@@ -6,6 +6,18 @@ import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import { useTranslations } from 'next-intl';
 
+interface FormData {
+  name: string;
+  email: string;
+  phone: string;
+  message: string;
+}
+
+interface FormError {
+  field: string;
+  message: string;
+}
+
 const ContactPage = () => {
   const t = useTranslations('contact');
   const [formData, setFormData] = useState({
@@ -20,6 +32,9 @@ const ContactPage = () => {
     },
     message: ''
   });
+  const [isLoading, setIsLoading] = useState(false);
+  const [error, setError] = useState<string | null>(null);
+  const [success, setSuccess] = useState(false);
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     const { name, value } = e.target;
@@ -40,49 +55,44 @@ const ContactPage = () => {
     }));
   };
 
-  const handleSubmit = async (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-    
+    setIsLoading(true);
+    setError(null);
+    setSuccess(false);
+
     try {
       const response = await fetch('/api/contact', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
         },
-        body: JSON.stringify({
-          promoCode: formData.promoCode,
-          fullName: formData.fullName,
-          email: formData.email,
-          phone: formData.phone,
-          country: formData.country,
-          interests: formData.interests,
-          message: formData.message
-        }),
+        body: JSON.stringify(formData),
       });
 
       const data = await response.json();
 
-      if (response.ok) {
-        alert(t('formSuccess'));
-        // Formu temizle
-        setFormData({
-          promoCode: '',
-          fullName: '',
-          email: '',
-          phone: '',
-          country: '',
-          interests: {
-            surgicalStapling: false,
-            ultrasonicSurgery: false
-          },
-          message: ''
-        });
-      } else {
-        throw new Error(data.details || 'Form gönderilemedi');
+      if (!response.ok) {
+        throw new Error(data.error || 'Bir hata oluştu');
       }
-    } catch (error: any) {
-      console.error('Form gönderim hatası:', error);
-      alert(error.message || 'Form gönderilirken bir hata oluştu. Lütfen daha sonra tekrar deneyin.');
+
+      setSuccess(true);
+      setFormData({
+        promoCode: '',
+        fullName: '',
+        email: '',
+        phone: '',
+        country: '',
+        interests: {
+          surgicalStapling: false,
+          ultrasonicSurgery: false
+        },
+        message: ''
+      });
+    } catch (err) {
+      setError(err instanceof Error ? err.message : 'Bir hata oluştu');
+    } finally {
+      setIsLoading(false);
     }
   };
 

@@ -72,13 +72,27 @@ export default function SoundReach8000Page() {
       console.log("Video 2 Observer başlatıldı");
     }
     
+    const video1 = videoRef1.current;
+    const video2 = videoRef2.current;
+
+    if (video1) {
+      video1.playbackRate = 0.5;
+    }
+    if (video2) {
+      video2.playbackRate = 0.5;
+    }
+
     // Cleanup
     return () => {
       window.removeEventListener('scroll', handleScroll);
-      const video1 = videoRef1.current;
-      const video2 = videoRef2.current;
       if (video1) video1Observer.unobserve(video1);
       if (video2) video2Observer.unobserve(video2);
+      if (video1) {
+        video1.playbackRate = 1;
+      }
+      if (video2) {
+        video2.playbackRate = 1;
+      }
     };
   }, []);
 
