@@ -78,11 +78,6 @@ const Footer = () => {
                   info@endolink.com.tr
                 </a>
               </li>
-              <li>
-                <a href="tel:+90-322-123-4567" className="hover:text-gray-300">
-                  +90 322 123 4567
-                </a>
-              </li>
               <li className="text-sm">
                 Güzelyalı Mahallesi 81201. Sokak, No:10/A Çukurova,Adana - Türkiye
               </li>
