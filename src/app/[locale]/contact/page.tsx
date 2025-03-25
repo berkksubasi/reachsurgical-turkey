@@ -7,20 +7,21 @@ import Footer from '@/components/Footer';
 import { useTranslations } from 'next-intl';
 
 interface FormData {
-  name: string;
+  promoCode: string;
+  fullName: string;
   email: string;
   phone: string;
-  message: string;
-}
-
-interface FormError {
-  field: string;
+  country: string;
+  interests: {
+    surgicalStapling: boolean;
+    ultrasonicSurgery: boolean;
+  };
   message: string;
 }
 
 const ContactPage = () => {
   const t = useTranslations('contact');
-  const [formData, setFormData] = useState({
+  const [formData, setFormData] = useState<FormData>({
     promoCode: '',
     fullName: '',
     email: '',
@@ -114,6 +115,18 @@ const ContactPage = () => {
       {/* Sağ taraf - Form */}
       <div className="w-full md:w-1/2 p-8 md:p-16 bg-white">
         <h1 className="text-4xl font-bold text-[#0a3b5c] mb-8">{t('title')}</h1>
+        
+        {error && (
+          <div className="mb-4 p-4 bg-red-100 border border-red-400 text-red-700 rounded">
+            {error}
+          </div>
+        )}
+        
+        {success && (
+          <div className="mb-4 p-4 bg-green-100 border border-green-400 text-green-700 rounded">
+            {t('formSuccess')}
+          </div>
+        )}
         
         <form onSubmit={handleSubmit}>
           <div className="mb-4">
@@ -228,16 +241,19 @@ const ContactPage = () => {
 
           <button
             type="submit"
-            className="w-full bg-[#0a3b5c] hover:bg-[#072a42] text-white font-bold py-3 px-4 rounded"
+            disabled={isLoading}
+            className={`w-full bg-[#0a3b5c] hover:bg-[#072a42] text-white font-bold py-3 px-4 rounded ${
+              isLoading ? 'opacity-50 cursor-not-allowed' : ''
+            }`}
           >
-            {t('submit')}
+            {isLoading ? t('sending') : t('submit')}
           </button>
         </form>
       </div>
     </div>
     <Footer />
     </>
-    );
-    };
+  );
+};
 
 export default ContactPage; 

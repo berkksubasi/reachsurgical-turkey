@@ -11,7 +11,7 @@ export function generateStaticParams() {
 }
 
 export const metadata: Metadata = {
-  title: "Reach Surgical - Medikal Çözümler",
+  title: "Endolink - Medikal Çözümler",
   description: "Cerrahlar için en iyi cerrahi aletleri sağlıyoruz.",
 };
 
