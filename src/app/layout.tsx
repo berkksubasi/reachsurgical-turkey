@@ -4,8 +4,11 @@ import { Inter } from 'next/font/google';
 const inter = Inter({ subsets: ['latin'] });
 
 export const metadata: Metadata = {
-  title: 'Medikal',
-  description: 'Medikal web sitesi',
+  title: 'Endolink',
+  description: 'Endolink Cerrahi Medikal Çözümler',
+  icons: {
+    icon: '/favicon.ico',
+  }
 };
 
 export default function RootLayout({
