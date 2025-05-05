@@ -182,6 +182,18 @@ const Header = () => {
       {/* Mobil menü */}
       <div className={`lg:hidden ${isOpen ? 'block' : 'hidden'}`}>
         <div className="px-2 pt-2 pb-3 space-y-1 bg-[#b22234]">
+          <Link href={createHref('/')} className="block px-3 py-2 text-white">
+            {t('home')}
+          </Link>
+          
+          <Link href={createHref('/about')} className="block px-3 py-2 text-white">
+            {t('aboutUs')}
+          </Link>
+          
+          <Link href={createHref('/vision-mission')} className="block px-3 py-2 text-white">
+            {t('visionMission')}
+          </Link>
+
           <div>
             <button 
               className="w-full flex justify-between items-center px-3 py-2 text-white"
@@ -247,18 +259,6 @@ const Header = () => {
               </Link>
             </div>
           </div>
-          
-          <Link href={createHref('/')} className="block px-3 py-2 text-white">
-            {t('home')}
-          </Link>
-          
-          <Link href={createHref('/about')} className="block px-3 py-2 text-white">
-            {t('aboutUs')}
-          </Link>
-          
-          <Link href={createHref('/vision-mission')} className="block px-3 py-2 text-white">
-            {t('visionMission')}
-          </Link>
           
           <a href="https://www.int.reachsurgical.com/news" target="_blank" rel="noopener noreferrer" className="block px-3 py-2 text-white">
             {t('news')}
