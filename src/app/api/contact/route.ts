@@ -1,15 +1,6 @@
 import { NextResponse } from 'next/server';
 import nodemailer from 'nodemailer';
 
-interface EmailError {
-  code: string;
-  command: string;
-  errno: number;
-  syscall: string;
-  address: string;
-  port: number;
-}
-
 export async function POST(request: Request) {
   try {
     const data = await request.json();
