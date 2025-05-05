@@ -3,19 +3,29 @@ import nodemailer from 'nodemailer';
 
 export async function POST(request: Request) {
   try {
-    const data = await request.json();
-    
-    // Natro SMTP ayarları
+    const formData = await request.json();
+    const { fullName, email, phone, company, subject, message } = formData;
+
+    // Form verilerini kontrol et
+    if (!fullName || !email || !phone || !subject || !message) {
+      return NextResponse.json(
+        { error: 'Lütfen tüm zorunlu alanları doldurun' },
+        { status: 400 }
+      );
+    }
+
+    // SMTP ayarları
     const transporter = nodemailer.createTransport({
-      host: 'mail.endolink.com.tr',
-      port: 587,
-      secure: false,
+      host: 'mail.kurumsaleposta.com',
+      port: 587, // TLS port
+      secure: false, // STARTTLS
       auth: {
         user: process.env.EMAIL_USER,
         pass: process.env.EMAIL_PASS
       },
       tls: {
-        rejectUnauthorized: false
+        rejectUnauthorized: false,
+        ciphers: 'SSLv3'
       }
     });
 
@@ -23,43 +33,43 @@ export async function POST(request: Request) {
     try {
       await transporter.verify();
       console.log('SMTP bağlantısı başarılı');
-    } catch (verifyError) {
-      console.error('SMTP bağlantı testi başarısız:', verifyError);
-      throw verifyError;
+    } catch (error) {
+      console.error('SMTP bağlantı testi başarısız:', error);
+      const errorMessage = error instanceof Error ? error.message : 'Bilinmeyen hata';
+      throw new Error(`Mail sunucusuna bağlanılamadı: ${errorMessage}`);
     }
 
     // Mail içeriği
     const mailOptions = {
       from: `"Endolink İletişim" <${process.env.EMAIL_USER}>`,
       to: 'info@endolink.com.tr',
-      subject: `İletişim Formu: ${data.subject}`,
+      subject: `İletişim Formu: ${subject}`,
       html: `
         <h2>Yeni İletişim Formu Mesajı</h2>
-        <p><strong>Ad Soyad:</strong> ${data.fullName}</p>
-        <p><strong>E-posta:</strong> ${data.email}</p>
-        <p><strong>Telefon:</strong> ${data.phone}</p>
-        <p><strong>Şirket:</strong> ${data.company || 'Belirtilmemiş'}</p>
-        <p><strong>Konu:</strong> ${data.subject}</p>
+        <p><strong>Ad Soyad:</strong> ${fullName}</p>
+        <p><strong>E-posta:</strong> ${email}</p>
+        <p><strong>Telefon:</strong> ${phone}</p>
+        <p><strong>Şirket:</strong> ${company || 'Belirtilmemiş'}</p>
+        <p><strong>Konu:</strong> ${subject}</p>
         <p><strong>Mesaj:</strong></p>
-        <p>${data.message}</p>
-      `
+        <p>${message}</p>
+      `,
+      replyTo: email
     };
 
-    // Maili gönder
+    // Mail gönderme
     const info = await transporter.sendMail(mailOptions);
-    console.log('E-posta gönderildi:', info.messageId);
+    console.log('Mail gönderildi:', info.messageId);
 
     return NextResponse.json({ 
-      success: true, 
-      message: 'Mesajınız başarıyla gönderildi.' 
+      success: true,
+      message: 'Mesajınız başarıyla gönderildi'
     });
-
   } catch (error) {
     console.error('Mail gönderme hatası:', error);
     return NextResponse.json(
       { 
-        success: false, 
-        message: 'Mesaj gönderilirken bir hata oluştu. Lütfen daha sonra tekrar deneyiniz.' 
+        error: error instanceof Error ? error.message : 'Mail gönderilirken bir hata oluştu'
       },
       { status: 500 }
     );

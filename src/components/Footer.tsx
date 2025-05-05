@@ -76,16 +76,21 @@ const Footer = () => {
 
           {/* Ürünler */}
           <div>
-            <h3 className="text-lg font-semibold mb-4 text-gray-900">{t('products')}</h3>
-            <ul className="space-y-3">
+            <h3 className="text-lg font-semibold text-[#b22234] mb-4">{t('products')}</h3>
+            <ul className="space-y-2">
               <li>
-                <Link href={createHref('/products/omnia')} className="text-gray-600 hover:text-[#b22234] transition-colors">
+                <Link href={`/${locale}/products/surgical-stapling`} className="text-gray-600 hover:text-[#b22234] transition-colors">
                   {t('surgicalStapling')}
                 </Link>
               </li>
               <li>
-                <Link href={createHref('/energy/ener-reach')} className="text-gray-600 hover:text-[#b22234] transition-colors">
+                <Link href={`/${locale}/products/energy`} className="text-gray-600 hover:text-[#b22234] transition-colors">
                   {t('energy')}
+                </Link>
+              </li>
+              <li>
+                <Link href={`/${locale}/robotics/omnibot`} className="text-gray-600 hover:text-[#b22234] transition-colors">
+                  {t('robotics')}
                 </Link>
               </li>
             </ul>

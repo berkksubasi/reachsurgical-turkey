@@ -56,11 +56,10 @@ const ContactPage = () => {
     }));
   };
 
-  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setIsLoading(true);
     setError(null);
-    setSuccess(false);
 
     try {
       const response = await fetch('/api/contact', {
@@ -68,7 +67,15 @@ const ContactPage = () => {
         headers: {
           'Content-Type': 'application/json',
         },
-        body: JSON.stringify(formData),
+        body: JSON.stringify({
+          fullName: formData.fullName,
+          email: formData.email,
+          phone: formData.phone,
+          company: formData.country,
+          subject: formData.interests.surgicalStapling ? 'Cerrahi Zımbalama' : 
+                  formData.interests.ultrasonicSurgery ? 'Ultrasonik Cerrahi' : 'Genel İletişim',
+          message: formData.message
+        }),
       });
 
       const data = await response.json();
@@ -91,6 +98,7 @@ const ContactPage = () => {
         message: ''
       });
     } catch (err) {
+      console.error('Form gönderme hatası:', err);
       setError(err instanceof Error ? err.message : 'Bir hata oluştu');
     } finally {
       setIsLoading(false);
@@ -124,13 +132,13 @@ const ContactPage = () => {
         
         {success && (
           <div className="mb-4 p-4 bg-green-100 border border-green-400 text-green-700 rounded">
-            {t('formSuccess')}
+            {t('form.success')}
           </div>
         )}
         
         <form onSubmit={handleSubmit}>
           <div className="mb-4">
-            <label htmlFor="promoCode" className="block text-sm font-medium text-gray-700">{t('promoCode')}</label>
+            <label htmlFor="promoCode" className="block text-sm font-medium text-gray-700">{t('form.promoCode')}</label>
             <input
               type="text"
               id="promoCode"
@@ -142,7 +150,7 @@ const ContactPage = () => {
           </div>
 
           <div className="mb-4">
-            <label htmlFor="fullName" className="block text-sm font-medium text-gray-700">{t('fullName')}</label>
+            <label htmlFor="fullName" className="block text-sm font-medium text-gray-700">{t('form.fullName')}</label>
             <input
               type="text"
               id="fullName"
@@ -156,7 +164,7 @@ const ContactPage = () => {
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-4">
             <div>
-              <label htmlFor="email" className="block text-sm font-medium text-gray-700">{t('email')}</label>
+              <label htmlFor="email" className="block text-sm font-medium text-gray-700">{t('form.email')}</label>
               <input
                 type="email"
                 id="email"
@@ -168,7 +176,7 @@ const ContactPage = () => {
               />
             </div>
             <div>
-              <label htmlFor="phone" className="block text-sm font-medium text-gray-700">{t('phone')}</label>
+              <label htmlFor="phone" className="block text-sm font-medium text-gray-700">{t('form.phone')}</label>
               <input
                 type="tel"
                 id="phone"
@@ -182,7 +190,7 @@ const ContactPage = () => {
           </div>
 
           <div className="mb-4">
-            <label htmlFor="country" className="block text-sm font-medium text-gray-700">{t('country')}</label>
+            <label htmlFor="country" className="block text-sm font-medium text-gray-700">{t('form.company')}</label>
             <input
               type="text"
               id="country"
@@ -195,7 +203,7 @@ const ContactPage = () => {
           </div>
 
           <div className="mb-4">
-            <p className="block text-sm font-medium text-gray-700 mb-2">{t('interests')}</p>
+            <p className="block text-sm font-medium text-gray-700 mb-2">{t('form.interests')}</p>
             <div className="space-y-2">
               <div className="flex items-center">
                 <input
@@ -207,7 +215,7 @@ const ContactPage = () => {
                   className="h-4 w-4 text-blue-600 border-gray-300 rounded"
                 />
                 <label htmlFor="surgicalStapling" className="ml-2 block text-sm text-gray-700">
-                  {t('surgicalStapling')}
+                  {t('form.surgicalStapling')}
                 </label>
               </div>
               <div className="flex items-center">
@@ -220,14 +228,14 @@ const ContactPage = () => {
                   className="h-4 w-4 text-blue-600 border-gray-300 rounded"
                 />
                 <label htmlFor="ultrasonicSurgery" className="ml-2 block text-sm text-gray-700">
-                  {t('ultrasonicSurgery')}
+                  {t('form.ultrasonicSurgery')}
                 </label>
               </div>
             </div>
           </div>
 
           <div className="mb-6">
-            <label htmlFor="message" className="block text-sm font-medium text-gray-700">{t('message')}</label>
+            <label htmlFor="message" className="block text-sm font-medium text-gray-700">{t('form.message')}</label>
             <textarea
               id="message"
               name="message"
@@ -246,7 +254,7 @@ const ContactPage = () => {
               isLoading ? 'opacity-50 cursor-not-allowed' : ''
             }`}
           >
-            {isLoading ? t('sending') : t('submit')}
+            {isLoading ? t('form.sending') : t('form.submit')}
           </button>
         </form>
       </div>

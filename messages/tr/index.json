@@ -1,24 +1,24 @@
 {
   "header": {
     "home": "Ana Sayfa",
+    "aboutUs": "Hakkımızda",
+    "visionMission": "Vizyon & Misyon",
     "surgicalStapling": "Cerrahi Zımbalama",
+    "energy": "Enerji",
+    "robotics": "Robotik",
+    "news": "Haberler",
+    "support": "Destek",
+    "contact": "İletişim",
     "omnia": "Omnia",
     "iReachMagnum": "iReach Magnum",
-    "openCircular": "Açık Dairesel",
-    "openLinear": "Açık Lineer",
-    "openPPH": "Açık PPH",
-    "energy": "Enerji",
-    "enerReachOP9": "Ener Reach OP9 Jeneratör",
-    "enerSealVesselSealer": "Enerseal Damar Mühürleyici/Ayırıcı",
+    "openCircular": "Open Circular",
+    "openLinear": "Open Linear",
+    "openPPH": "Open PPH",
+    "enerReachOP9": "EnerReach OP9",
+    "enerSealVesselSealer": "EnerSeal Vessel Sealer",
     "soundReach8000": "Sound Reach 8000",
-    "sr7SeriesShears": "SR7 Serisi Makaslar",
-    "robotics": "Robotik",
-    "omnibot": "Omnibot",
-    "aboutUs": "Hakkımızda",
-    "contact": "İletişim",
-    "support": "Destek",
-    "news": "Haberler",
-    "visionMission": "Vizyon & Misyon"
+    "sr7SeriesShears": "SR7 Series Shears",
+    "omnibot": "OmniBot"
   },
   "products": {
     "omnia": {
@@ -193,24 +193,20 @@
     }
   },
   "footer": {
-    "products": "Ürünler",
     "company": "Şirket",
-    "support": "Destek",
-    "contactUs": "Bize Ulaşın",
-    "copyright": "© 2025 Endolink. Tüm hakları saklıdır.",
+    "products": "Ürünler",
+    "address": "İstanbul, Türkiye",
+    "copyright": "© 2024 Endolink. Tüm hakları saklıdır.",
     "privacyPolicy": "Gizlilik Politikası",
     "termsOfUse": "Kullanım Koşulları",
     "home": "Ana Sayfa",
+    "aboutUs": "Hakkımızda",
+    "visionMission": "Vizyon & Misyon",
     "news": "Haberler",
     "contact": "İletişim",
-    "visionMission": "Vizyon & Misyon",
-    "subscribeTitle": "Bültenimize Abone Olun",
-    "emailPlaceholder": "E-posta Adresinizi Girin",
-    "joinButton": "Katıl",
-    "address": "Güzelyalı Mahallesi 81201. Sokak, No:10/A Çukurova,Adana - Türkiye",
     "surgicalStapling": "Cerrahi Zımbalama",
     "energy": "Enerji",
-    "aboutUs": "Hakkımızda"
+    "robotics": "Robotik"
   },
   "energy": {
     "enerReach": {
@@ -355,18 +351,23 @@
     }
   },
   "contact": {
-    "title": "Bize Ulaşın",
-    "promoCode": "Promosyon Kodu",
-    "fullName": "Ad Soyad *",
-    "email": "E-posta *",
-    "phone": "Telefon *",
-    "country": "Ülke *",
-    "interests": "İlgilendiğiniz konu: *",
-    "surgicalStapling": "Cerrahi Zımbalama",
-    "ultrasonicSurgery": "Ultrasonik Cerrahi Jeneratörleri ve Makasları",
-    "message": "Mesaj bırakın *",
-    "submit": "Gönder",
-    "formSuccess": "Form başarıyla gönderildi!"
+    "title": "İletişim",
+    "description": "Bizimle iletişime geçin",
+    "form": {
+      "promoCode": "Promosyon Kodu",
+      "fullName": "Ad Soyad",
+      "email": "E-posta",
+      "phone": "Telefon",
+      "company": "Şirket",
+      "interests": "İlgi Alanları",
+      "surgicalStapling": "Cerrahi Zımbalama",
+      "ultrasonicSurgery": "Ultrasonik Cerrahi",
+      "message": "Mesaj",
+      "submit": "Gönder",
+      "sending": "Gönderiliyor...",
+      "success": "Mesajınız başarıyla gönderildi",
+      "error": "Mesaj gönderilirken bir hata oluştu"
+    }
   },
   "support": {
     "hero": {

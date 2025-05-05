@@ -1,24 +1,24 @@
 {
   "header": {
     "home": "Home",
+    "aboutUs": "About Us",
+    "visionMission": "Vision & Mission",
     "surgicalStapling": "Surgical Stapling",
+    "energy": "Energy",
+    "robotics": "Robotics",
+    "news": "News",
+    "support": "Support",
+    "contact": "Contact",
     "omnia": "Omnia",
     "iReachMagnum": "iReach Magnum",
     "openCircular": "Open Circular",
     "openLinear": "Open Linear",
     "openPPH": "Open PPH",
-    "energy": "Energy",
-    "enerReachOP9": "Ener Reach OP9 Generator",
-    "enerSealVesselSealer": "Enerseal Vessel Sealer/Divider",
+    "enerReachOP9": "EnerReach OP9",
+    "enerSealVesselSealer": "EnerSeal Vessel Sealer",
     "soundReach8000": "Sound Reach 8000",
     "sr7SeriesShears": "SR7 Series Shears",
-    "robotics": "Robotics",
-    "omnibot": "Omnibot",
-    "aboutUs": "About Us",
-    "contact": "Contact",
-    "support": "Support",
-    "news": "News",
-    "visionMission": "Vision & Mission"
+    "omnibot": "OmniBot"
   },
   "products": {
     "omnia": {
@@ -305,24 +305,20 @@
     }
   },
   "footer": {
-    "products": "Products",
     "company": "Company",
-    "support": "Support",
-    "contactUs": "Contact Us",
-    "copyright": "© 2025 Endolink. All rights reserved.",
+    "products": "Products",
+    "address": "Istanbul, Turkey",
+    "copyright": "© 2024 Endolink. All rights reserved.",
     "privacyPolicy": "Privacy Policy",
     "termsOfUse": "Terms of Use",
     "home": "Home",
+    "aboutUs": "About Us",
+    "visionMission": "Vision & Mission",
     "news": "News",
     "contact": "Contact",
-    "visionMission": "Vision & Mission",
-    "subscribeTitle": "Subscribe to Our Newsletter",
-    "emailPlaceholder": "Enter your email address",
-    "joinButton": "Join",
-    "address": "Güzelyalı Mahallesi 81201. Sokak, No:10/A Çukurova,Adana - Turkey",
     "surgicalStapling": "Surgical Stapling",
     "energy": "Energy",
-    "aboutUs": "About Us"
+    "robotics": "Robotics"
   },
   "about": {
     "hero": {
@@ -354,18 +350,23 @@
     }
   },
   "contact": {
-    "title": "Contact Us",
-    "promoCode": "Promo Code",
-    "fullName": "Full Name *",
-    "email": "Email *",
-    "phone": "Phone *",
-    "country": "Country *",
-    "interests": "What are you interested in: *",
-    "surgicalStapling": "Surgical Stapling",
-    "ultrasonicSurgery": "Ultrasonic Surgery Generators & Shears",
-    "message": "Leave a message *",
-    "submit": "Submit",
-    "formSuccess": "Form submitted successfully!"
+    "title": "Contact",
+    "description": "Get in touch with us",
+    "form": {
+      "promoCode": "Promo Code",
+      "fullName": "Full Name",
+      "email": "Email",
+      "phone": "Phone",
+      "company": "Company",
+      "interests": "Interests",
+      "surgicalStapling": "Surgical Stapling",
+      "ultrasonicSurgery": "Ultrasonic Surgery",
+      "message": "Message",
+      "submit": "Submit",
+      "sending": "Sending...",
+      "success": "Your message has been sent successfully",
+      "error": "An error occurred while sending the message"
+    }
   },
   "support": {
     "hero": {
