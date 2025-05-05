@@ -35,20 +35,32 @@ const Header = () => {
   };
 
   return (
-    <header className="bg-[#0a3b5c] text-white relative z-50">
+    <header className="bg-white text-gray-800 relative z-50">
       <div className="container mx-auto px-4 py-3 flex justify-between items-center">
         <div className="flex items-center">
           <Link href={createHref('/')} className="mr-8">
             <Image 
               src="/images/logo.png" 
               alt="Reach Surgical Logo" 
-              width={200} 
-              height={80}
-              className="h-20 w-auto"
+              width={80} 
+              height={30}
+              className="h-14 w-auto"
             />
           </Link>
           
           <nav className="hidden lg:flex space-x-8">
+            <Link href={createHref('/')} className="py-2">
+              {t('home')}
+            </Link>
+
+            <Link href={createHref('/about')} className="py-2">
+              {t('aboutUs')}
+            </Link>
+            
+            <Link href={createHref('/vision-mission')} className="py-2">
+              {t('visionMission')}
+            </Link>
+
             <div className="relative group">
               <button 
                 className="flex items-center space-x-1 py-2"
@@ -115,10 +127,6 @@ const Header = () => {
               </div>
             </div>
             
-            <Link href={createHref('/about')} className="py-2">
-              {t('aboutUs')}
-            </Link>
-            
             <a href="https://www.int.reachsurgical.com/news" target="_blank" rel="noopener noreferrer" className="py-2">
               {t('news')}
             </a>
@@ -131,7 +139,7 @@ const Header = () => {
         
         <div className="flex items-center space-x-4">
           {/* İletişim butonu - Sağ tarafta arka plan renkli */}
-          <Link href={createHref('/contact')} className="hidden lg:flex items-center bg-[#b22234] hover:bg-[#9a1d2c] px-4 py-2 rounded-md transition-colors duration-300">
+          <Link href={createHref('/contact')} className="hidden lg:flex items-center bg-[#b22234] text-white hover:bg-[#9a1d2c] px-4 py-2 rounded-md transition-colors duration-300">
             {t('contact')}
           </Link>
           
@@ -173,7 +181,7 @@ const Header = () => {
       
       {/* Mobil menü */}
       <div className={`lg:hidden ${isOpen ? 'block' : 'hidden'}`}>
-        <div className="px-2 pt-2 pb-3 space-y-1 bg-[#0a3b5c]">
+        <div className="px-2 pt-2 pb-3 space-y-1 bg-[#b22234]">
           <div>
             <button 
               className="w-full flex justify-between items-center px-3 py-2 text-white"
@@ -240,8 +248,16 @@ const Header = () => {
             </div>
           </div>
           
+          <Link href={createHref('/')} className="block px-3 py-2 text-white">
+            {t('home')}
+          </Link>
+          
           <Link href={createHref('/about')} className="block px-3 py-2 text-white">
             {t('aboutUs')}
+          </Link>
+          
+          <Link href={createHref('/vision-mission')} className="block px-3 py-2 text-white">
+            {t('visionMission')}
           </Link>
           
           <a href="https://www.int.reachsurgical.com/news" target="_blank" rel="noopener noreferrer" className="block px-3 py-2 text-white">
@@ -250,10 +266,6 @@ const Header = () => {
           
           <Link href={createHref('/support')} className="block px-3 py-2 text-white">
             {t('support')}
-          </Link>
-          
-          <Link href={createHref('/vision-mission')} className="block px-3 py-2 text-white">
-            {t('visionMission')}
           </Link>
           
           {/* Mobil menüde iletişim butonu - Özel arka plan renkli */}

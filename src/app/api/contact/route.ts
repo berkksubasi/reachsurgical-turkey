@@ -12,21 +12,20 @@ interface EmailError {
 
 export async function POST(request: Request) {
   try {
-    const body = await request.json();
-
-    // Natro SMTP ayarları - https://www.natro.com/blog/smtp-nedir-wordpress-smtp-mail-ayari-nasil-yapilir/
+    const data = await request.json();
+    
+    // Natro SMTP ayarları
     const transporter = nodemailer.createTransport({
       host: 'mail.endolink.com.tr',
       port: 587,
       secure: false,
       auth: {
         user: process.env.EMAIL_USER,
-        pass: process.env.EMAIL_PASS,
+        pass: process.env.EMAIL_PASS
       },
       tls: {
         rejectUnauthorized: false
-      },
-      debug: true
+      }
     });
 
     // Bağlantıyı test et
@@ -38,38 +37,39 @@ export async function POST(request: Request) {
       throw verifyError;
     }
 
-    // E-posta içeriğini oluştur
+    // Mail içeriği
     const mailOptions = {
       from: `"Endolink İletişim" <${process.env.EMAIL_USER}>`,
-      to: process.env.EMAIL_USER,
-      subject: 'İletişim Formu - Yeni Mesaj',
+      to: 'info@endolink.com.tr',
+      subject: `İletişim Formu: ${data.subject}`,
       html: `
-        <h2>İletişim Formu - Yeni Mesaj</h2>
-        <p><strong>Promosyon Kodu:</strong> ${body.promoCode}</p>
-        <p><strong>Ad Soyad:</strong> ${body.fullName}</p>
-        <p><strong>E-posta:</strong> ${body.email}</p>
-        <p><strong>Telefon:</strong> ${body.phone}</p>
-        <p><strong>Ülke:</strong> ${body.country}</p>
-        <p><strong>İlgi Alanları:</strong></p>
-        <ul>
-          <li>Cerrahi Zımbalama: ${body.interests.surgicalStapling ? 'Evet' : 'Hayır'}</li>
-          <li>Ultrasonik Cerrahi: ${body.interests.ultrasonicSurgery ? 'Evet' : 'Hayır'}</li>
-        </ul>
+        <h2>Yeni İletişim Formu Mesajı</h2>
+        <p><strong>Ad Soyad:</strong> ${data.fullName}</p>
+        <p><strong>E-posta:</strong> ${data.email}</p>
+        <p><strong>Telefon:</strong> ${data.phone}</p>
+        <p><strong>Şirket:</strong> ${data.company || 'Belirtilmemiş'}</p>
+        <p><strong>Konu:</strong> ${data.subject}</p>
         <p><strong>Mesaj:</strong></p>
-        <p>${body.message}</p>
-      `,
+        <p>${data.message}</p>
+      `
     };
 
-    // E-postayı gönder
+    // Maili gönder
     const info = await transporter.sendMail(mailOptions);
     console.log('E-posta gönderildi:', info.messageId);
 
-    return NextResponse.json({ message: 'Form başarıyla gönderildi' }, { status: 200 });
+    return NextResponse.json({ 
+      success: true, 
+      message: 'Mesajınız başarıyla gönderildi.' 
+    });
+
   } catch (error) {
-    const emailError = error as EmailError;
-    console.error('E-posta gönderim hatası:', emailError);
+    console.error('Mail gönderme hatası:', error);
     return NextResponse.json(
-      { error: 'E-posta gönderilemedi. Lütfen daha sonra tekrar deneyin.' },
+      { 
+        success: false, 
+        message: 'Mesaj gönderilirken bir hata oluştu. Lütfen daha sonra tekrar deneyiniz.' 
+      },
       { status: 500 }
     );
   }

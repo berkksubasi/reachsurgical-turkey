@@ -11,8 +11,8 @@ const ProductSection = () => {
       <div className="py-16 bg-white">
         <div className="container mx-auto px-4">
           <div className="text-center mb-12">
-            <h2 className="text-4xl font-bold mb-4 text-[#0a3b5c]">{t('title')}</h2>
-            <p className="text-xl text-[#0a3b5c]">{t('subtitle')}</p>
+            <h2 className="text-4xl font-bold mb-4 text-[#b22234]">{t('title')}</h2>
+            <p className="text-xl text-[#b22234]">{t('subtitle')}</p>
           </div>
           
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -27,7 +27,7 @@ const ProductSection = () => {
                 />
               </div>
               <div className="p-6">
-                <h3 className="text-xl font-bold mb-2 text-[#0a3b5c]">Omnia</h3>
+                <h3 className="text-xl font-bold mb-2 text-[#b22234]">Omnia</h3>
                 <p className="text-gray-600 mb-4">{t('descriptions.omnia')}</p>
               </div>
             </div>
@@ -42,7 +42,7 @@ const ProductSection = () => {
                 />
               </div>
               <div className="p-6">
-                <h3 className="text-xl font-bold mb-2 text-[#0a3b5c]">iReach Magnum</h3>
+                <h3 className="text-xl font-bold mb-2 text-[#b22234]">iReach Magnum</h3>
                 <p className="text-gray-600 mb-4">{t('descriptions.iReachMagnum')}</p>
               </div>
             </div>
@@ -57,7 +57,7 @@ const ProductSection = () => {
                 />
               </div>
               <div className="p-6">
-                <h3 className="text-xl font-bold mb-2 text-[#0a3b5c]">Energy Devices</h3>
+                <h3 className="text-xl font-bold mb-2 text-[#b22234]">Energy Devices</h3>
                 <p className="text-gray-600 mb-4">{t('descriptions.energy')}</p>
               </div>
             </div>

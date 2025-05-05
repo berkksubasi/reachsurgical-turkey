@@ -24,7 +24,7 @@ export default function Home() {
       <Hero />
       <ProductSection />
       
-      <section className="py-16 bg-[#0a3b5c] text-white">
+      <section className="py-16 bg-[#b22234] text-white">
         <div className="container mx-auto px-4">
           <div className="text-center mb-12">
             <h2 className="text-4xl font-bold mb-4">{t('title')}</h2>
@@ -34,7 +34,7 @@ export default function Home() {
           <div className="flex justify-center">
             <Link 
               href={createHref('/about')}
-              className="inline-block px-6 py-2 border border-white text-white hover:bg-white hover:text-[#0a3b5c] rounded-md transition-all duration-300"
+              className="inline-block px-6 py-2 border border-white text-white hover:bg-white hover:text-[#b22234] rounded-md transition-all duration-300"
             >
               {t('button')}
             </Link>

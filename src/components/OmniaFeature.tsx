@@ -14,7 +14,7 @@ const OmniaFeature = ({ title, description, imageSrc, imageAlt, reverse = false 
       <div className="container mx-auto px-4">
         <div className={`grid grid-cols-1 lg:grid-cols-2 gap-12 items-center ${reverse ? 'lg:flex-row-reverse' : ''}`}>
           <div className={`${reverse ? 'lg:order-2' : ''}`}>
-            <h2 className="text-4xl font-bold mb-6 text-[#0a3b5c]">{title}</h2>
+            <h2 className="text-4xl font-bold mb-6 text-[#b22234]">{title}</h2>
             {typeof description === 'string' ? (
               <p className="text-lg">{description}</p>
             ) : (

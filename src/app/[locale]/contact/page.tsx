@@ -114,7 +114,7 @@ const ContactPage = () => {
 
       {/* Sağ taraf - Form */}
       <div className="w-full md:w-1/2 p-8 md:p-16 bg-white">
-        <h1 className="text-4xl font-bold text-[#0a3b5c] mb-8">{t('title')}</h1>
+        <h1 className="text-4xl font-bold text-[#b22234] mb-8">{t('title')}</h1>
         
         {error && (
           <div className="mb-4 p-4 bg-red-100 border border-red-400 text-red-700 rounded">
@@ -242,7 +242,7 @@ const ContactPage = () => {
           <button
             type="submit"
             disabled={isLoading}
-            className={`w-full bg-[#0a3b5c] hover:bg-[#072a42] text-white font-bold py-3 px-4 rounded ${
+            className={`w-full bg-[#b22234] hover:bg-[#9a1d2c] text-white font-bold py-3 px-4 rounded ${
               isLoading ? 'opacity-50 cursor-not-allowed' : ''
             }`}
           >

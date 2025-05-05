@@ -102,8 +102,8 @@ export default function OmniaPage() {
       <section className="py-16 bg-gradient-to-b from-gray-50 to-gray-100">
         <div className="container mx-auto px-4 text-center">
           <AnimatedElement animation="slide-up" className="mb-8">
-            <h2 className="text-5xl font-bold mb-8 text-[#0a3b5c] drop-shadow-lg">
-              <span className="relative inline-block after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-full after:h-1 after:bg-[#0a3b5c]">
+            <h2 className="text-5xl font-bold mb-8 text-[#b22234] drop-shadow-lg">
+              <span className="relative inline-block after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-full after:h-1 after:bg-[#b22234]">
                 {t('overview.title')}
               </span>
             </h2>
@@ -127,7 +127,7 @@ export default function OmniaPage() {
                 preload="none"
                 poster="/images/omnia-tools.avif"
               />
-              <div className="absolute inset-0 bg-gradient-to-t from-[#0a3b5c]/60 to-transparent pointer-events-none"></div>
+              <div className="absolute inset-0 bg-gradient-to-t from-[#b22234]/60 to-transparent pointer-events-none"></div>
             </div>
           </AnimatedElement>
         </div>
@@ -138,7 +138,7 @@ export default function OmniaPage() {
         <div className="flex flex-col md:flex-row items-center">
           <div className="w-full md:w-1/2 pl-[10%] pr-8 mb-6 md:mb-0 py-16 flex flex-col justify-center">
             <AnimatedElement animation="fade-in" delay={0.2}>
-              <h2 className="text-4xl font-bold mb-8 text-[#0a3b5c] relative inline-block after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-16 after:h-1 after:bg-[#0a3b5c]">
+              <h2 className="text-4xl font-bold mb-8 text-[#b22234] relative inline-block after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-16 after:h-1 after:bg-[#b22234]">
                 {t('proRange.title')}
               </h2>
             </AnimatedElement>
@@ -172,7 +172,7 @@ export default function OmniaPage() {
         <div className="flex flex-col md:flex-row items-center">
           <div className="w-full md:w-1/2 pl-[10%] pr-8 mb-6 md:mb-0 py-16 flex flex-col justify-center">
             <AnimatedElement animation="fade-in" delay={0.2}>
-              <h2 className="text-4xl font-bold mb-8 text-[#0a3b5c] relative inline-block after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-16 after:h-1 after:bg-[#0a3b5c]">
+              <h2 className="text-4xl font-bold mb-8 text-[#b22234] relative inline-block after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-16 after:h-1 after:bg-[#b22234]">
                 {t('proPerformance.title')}
               </h2>
             </AnimatedElement>
@@ -215,7 +215,7 @@ export default function OmniaPage() {
         <div className="flex flex-col md:flex-row items-center">
           <div className="w-full md:w-1/2 pl-[10%] pr-8 mb-6 md:mb-0 py-16 flex flex-col justify-center">
             <AnimatedElement animation="fade-in" delay={0.2}>
-              <h2 className="text-4xl font-bold mb-8 text-[#0a3b5c] relative inline-block after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-16 after:h-1 after:bg-[#0a3b5c]">
+              <h2 className="text-4xl font-bold mb-8 text-[#b22234] relative inline-block after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-16 after:h-1 after:bg-[#b22234]">
                 {t('proIntelligence.title')}
               </h2>
             </AnimatedElement>
@@ -254,14 +254,14 @@ export default function OmniaPage() {
       <section className="py-16 bg-gradient-to-b from-gray-50 to-gray-100">
         <div className="container mx-auto px-4 text-center">
           <AnimatedElement animation="slide-up" className="mb-12">
-            <h2 className="text-4xl font-bold mb-8 text-[#0a3b5c] relative inline-block after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-32 after:h-1 after:bg-[#0a3b5c]">
+            <h2 className="text-4xl font-bold mb-8 text-[#b22234] relative inline-block after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-32 after:h-1 after:bg-[#b22234]">
               {t('specifications.title')}
             </h2>
           </AnimatedElement>
           
           <div className="flex flex-col md:flex-row justify-center gap-8">
             <AnimatedElement animation="fade-in" delay={0.3}>
-              <a href="#" className="bg-[#0a3b5c] text-white px-8 py-4 rounded-lg hover:bg-[#0a3b5c]/80 transition-colors">
+              <a href="#" className="bg-[#b22234] text-white px-8 py-4 rounded-lg hover:bg-[#b22234]/80 transition-colors">
                 {t('specifications.downloadBrochure')}
               </a>
             </AnimatedElement>
@@ -284,7 +284,7 @@ export default function OmniaPage() {
             fill
             className="object-cover"
           />
-          <div className="absolute inset-0 bg-gradient-to-r from-[#0a3b5c]/90 to-[#0a3b5c]/80"></div>
+          <div className="absolute inset-0 bg-gradient-to-r from-[#b22234]/90 to-[#b22234]/80"></div>
         </div>
         
         <div className="container mx-auto px-4 relative z-10 py-16">
